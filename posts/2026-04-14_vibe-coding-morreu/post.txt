@@ -1,0 +1,32 @@
+Karpathy criou o vibe coding. Agora diz que está morto. Mas 92% dos devs usam IA pra codar todo dia. Quem está certo?
+
+Os dois.
+
+O que morreu não foi o vibe coding. Foi a ilusão.
+
+A ilusão de que qualquer pessoa podia abrir o Cursor, digitar "cria um SaaS pra mim" e sair com um produto real.
+
+Eu caí nessa. No começo, achei que prompt bem escrito resolvia tudo. Construí protótipos rápidos, fiquei impressionado com a velocidade. Mas quando fui colocar em produção, o castelo de cartas caiu.
+
+Sem arquitetura, sem testes, sem entendimento do que a IA estava gerando — era dívida técnica disfarçada de velocidade.
+
+A Bloomberg cobriu isso na semana passada. Karpathy chamou o termo de "passé". E um novo conceito está ganhando tração: agentic engineering.
+
+A diferença é simples:
+
+--> Vibe coder: pede código pra IA e aceita o que vem
+--> Arquiteto com IA: define estrutura, valida output, usa IA como ferramenta — não como muleta
+
+92% dos desenvolvedores usam IA diariamente em 2026. O número não caiu. Subiu.
+
+O que mudou foi o nível de exigência.
+
+Quem evoluiu de "prompt-and-pray" pra "arquiteto assistido por IA" está entregando software real. Mais rápido, com menos time, com qualidade.
+
+Quem não fez essa transição está criando protótipos que nunca viram produção.
+
+Vibe coding não morreu. Amadureceu. E deixou pra trás quem não amadureceu junto.
+
+Você é vibe coder ou arquiteto com IA? Me diz nos comentários qual ferramenta de IA você mais usa e pra quê.
+
+#VibeCoding #InteligenciaArtificial #AI #Tecnologia #Inovacao

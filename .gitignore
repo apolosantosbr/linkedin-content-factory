@@ -1,0 +1,13 @@
+# System files
+.DS_Store
+Thumbs.db
+
+# Claude Code
+.claude/
+
+# Node modules (if using Playwright)
+node_modules/
+
+# Temporary files
+*.tmp
+*.bak
