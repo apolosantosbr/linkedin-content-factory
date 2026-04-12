@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800;900&display=swap');
+* { margin: 0; padding: 0; box-sizing: border-box; }
+.image {
+  width: 1080px;
+  height: 1350px;
+  background: #F5F5F5;
+  padding: 60px;
+  font-family: 'Inter', -apple-system, sans-serif;
+  position: relative;
+  color: #0A0A0A;
+  overflow: hidden;
+}
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 24px;
+  border-bottom: 4px solid #0A0A0A;
+  margin-bottom: 56px;
+}
+.masthead {
+  font-size: 36px;
+  font-weight: 900;
+  letter-spacing: -1px;
+}
+.masthead .dot {
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #00D4FF, #7C3AED);
+  margin-left: 6px;
+  vertical-align: middle;
+}
+.issue {
+  font-size: 14px;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: #374151;
+}
+.category {
+  font-size: 15px;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  color: #7C3AED;
+  font-weight: 800;
+  margin-bottom: 20px;
+}
+h1 {
+  font-size: 108px;
+  font-weight: 900;
+  line-height: 0.92;
+  letter-spacing: -4px;
+  margin-bottom: 36px;
+}
+h1 .accent {
+  background: linear-gradient(135deg, #00D4FF, #7C3AED);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.subtitle {
+  font-size: 22px;
+  color: #374151;
+  line-height: 1.45;
+  max-width: 920px;
+  margin-bottom: 56px;
+  border-left: 4px solid #00D4FF;
+  padding-left: 24px;
+  font-weight: 500;
+}
+.features {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 32px;
+  margin-top: 32px;
+}
+.feature {
+  border-top: 3px solid #0A0A0A;
+  padding-top: 20px;
+}
+.feature .num {
+  font-size: 16px;
+  font-weight: 800;
+  color: #7C3AED;
+  letter-spacing: 2px;
+  margin-bottom: 8px;
+}
+.feature .value {
+  font-size: 52px;
+  font-weight: 900;
+  line-height: 1;
+  color: #0A0A0A;
+  letter-spacing: -2px;
+  margin-bottom: 10px;
+}
+.feature .label {
+  font-size: 15px;
+  color: #6B7280;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+.footer {
+  position: absolute;
+  bottom: 60px;
+  left: 60px;
+  right: 60px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 13px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  padding-top: 20px;
+  border-top: 2px solid #0A0A0A;
+  font-weight: 700;
+}
+.author {
+  color: #0A0A0A;
+}
+.source {
+  color: #6B7280;
+  font-style: italic;
+  text-transform: none;
+  letter-spacing: 0.5px;
+  font-weight: 500;
+}
+</style>
+</head>
+<body>
+<div class="image">
+  <div class="header">
+    <div class="masthead">SIMPLIFICA<span class="dot"></span></div>
+    <div class="issue">Ed. 02 / Abril 2026</div>
+  </div>
+  <div class="category">O FUTURO DO TRABALHO</div>
+  <h1>IA ou você<br>fica pra <span class="accent">trás</span></h1>
+  <p class="subtitle">Os dados de 2026 mostram que profissionais sem IA já perdem salário, vagas e relevância. Mas 84% do mercado ainda está parado — e essa é a janela.</p>
+  <div class="features">
+    <div class="feature">
+      <div class="num">01</div>
+      <div class="value">-43%</div>
+      <div class="label">Salário</div>
+    </div>
+    <div class="feature">
+      <div class="num">02</div>
+      <div class="value">502K</div>
+      <div class="label">Demissões</div>
+    </div>
+    <div class="feature">
+      <div class="num">03</div>
+      <div class="value">84%</div>
+      <div class="label">Parados</div>
+    </div>
+  </div>
+  <div class="footer">
+    <span class="author">APOLO SANTOS</span>
+    <span class="source">Fonte: Lightcast, NBER, Deloitte / 2026</span>
+  </div>
+</div>
+</body>
+</html>
