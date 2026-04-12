@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800;900&display=swap');
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  .image {
+    width: 1080px;
+    height: 1350px;
+    background: #0A0A0A;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 80px;
+    position: relative;
+    overflow: hidden;
+    font-family: 'Inter', -apple-system, sans-serif;
+  }
+  .bg-circle {
+    position: absolute;
+    width: 700px;
+    height: 700px;
+    border-radius: 50%;
+    background: radial-gradient(circle, rgba(124,58,237,0.12) 0%, transparent 70%);
+    top: -150px;
+    right: -150px;
+  }
+  .bg-circle-2 {
+    position: absolute;
+    width: 500px;
+    height: 500px;
+    border-radius: 50%;
+    background: radial-gradient(circle, rgba(0,212,255,0.1) 0%, transparent 70%);
+    bottom: -80px;
+    left: -80px;
+  }
+  .badge {
+    display: inline-block;
+    padding: 10px 24px;
+    background: rgba(0, 212, 255, 0.1);
+    border: 1px solid rgba(0, 212, 255, 0.3);
+    border-radius: 50px;
+    font-size: 18px;
+    color: #00D4FF;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 60px;
+    z-index: 1;
+  }
+  .number {
+    font-size: 340px;
+    font-weight: 900;
+    line-height: 0.9;
+    letter-spacing: -12px;
+    background: linear-gradient(135deg, #00D4FF, #7C3AED);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    z-index: 1;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  .divider {
+    width: 120px;
+    height: 3px;
+    background: linear-gradient(90deg, #00D4FF, #7C3AED);
+    margin: 32px 0;
+    border-radius: 2px;
+    z-index: 1;
+  }
+  h1 {
+    font-size: 56px;
+    font-weight: 800;
+    color: #FFFFFF;
+    text-align: center;
+    line-height: 1.15;
+    z-index: 1;
+    margin-bottom: 20px;
+    max-width: 900px;
+  }
+  .subtitle {
+    font-size: 32px;
+    color: #A0AEC0;
+    text-align: center;
+    font-weight: 600;
+    z-index: 1;
+  }
+  .author {
+    position: absolute;
+    bottom: 60px;
+    left: 80px;
+    font-size: 20px;
+    color: #00D4FF;
+    letter-spacing: 2px;
+    font-weight: 700;
+    z-index: 1;
+  }
+  .source {
+    position: absolute;
+    bottom: 60px;
+    right: 80px;
+    font-size: 16px;
+    color: #6B7280;
+    letter-spacing: 0.5px;
+    font-style: italic;
+    z-index: 1;
+  }
+</style>
+</head>
+<body>
+<div class="image">
+  <div class="bg-circle"></div>
+  <div class="bg-circle-2"></div>
+  <div class="badge">O FUTURO DO TRABALHO</div>
+  <div class="number">-43%</div>
+  <div class="divider"></div>
+  <h1>Quem não usa IA ganha menos</h1>
+  <p class="subtitle">E é só o começo.</p>
+  <p class="author">APOLO SANTOS</p>
+  <p class="source">Fonte: Lightcast, 2026</p>
+</div>
+</body>
+</html>
