@@ -120,8 +120,9 @@
 1. **Zero-Click**: Entregue TODO o valor dentro do LinkedIn. Links somente no primeiro comentario.
 2. **Hook ou Morte**: Se os primeiros 210 caracteres nao prendem, nada mais importa.
 3. **Dados > Opiniao > Teoria**: Sempre que possivel, use numeros reais.
-4. **Um post = uma ideia**: Nao tente cobrir tudo. Profundidade > amplitude.
-5. **CTA especifico**: Nunca termine sem CTA. Pergunta direta > "o que voce acha?".
-6. **Mobile-first**: 57% leem no celular. Paragrafos curtos, escaneabilidade maxima.
-7. **Consistencia tematica**: O algoritmo rastreia seus temas. Ficar nos 5 pilares.
-8. **Responder comentarios em 15 min**: Dispara boost algoritmico significativo.
+4. **SEMPRE CITAR FONTE**: Todo dado, estatistica ou numero DEVE vir com fonte entre parenteses. Formato: "dado (Fonte, ano)". Ex: "43% menos (Lightcast, 2026)". Sem excecao.
+5. **Um post = uma ideia**: Nao tente cobrir tudo. Profundidade > amplitude.
+6. **CTA especifico**: Nunca termine sem CTA. Pergunta direta > "o que voce acha?".
+7. **Mobile-first**: 57% leem no celular. Paragrafos curtos, escaneabilidade maxima.
+8. **Consistencia tematica**: O algoritmo rastreia seus temas. Ficar nos 5 pilares.
+9. **Responder comentarios em 15 min**: Dispara boost algoritmico significativo.
