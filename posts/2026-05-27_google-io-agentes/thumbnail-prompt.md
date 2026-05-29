@@ -33,7 +33,7 @@ Um poster social-native FLAT, fundo com gradiente diagonal Gemini do azul Google
 - **Fecho linha 2 (branco `#FFFFFF`):** `É O MAIS CONFIÁVEL.`
 
 ### Footer (banda inferior discreta, LIMPO — regra v2.1)
-`APOLO SANTOS  ·  CC BY-NC-SA 4.0`
+`APOLO SANTOS`
 
 > **Acentuacao (regra dura — 5 diacriticos):** `RÉGUA` (É), `NÃO` (til), `É` (agudo, 2x), `CONFIÁVEL` (Á). Conferir cada um. Se algum sair errado, regenerar ou montar o texto no editor.
 
@@ -67,7 +67,7 @@ CENTRAL TEXT BLOCK — framed by a thin rounded-rectangle outline in white. Insi
 
 GHOST LOGO — in a bottom corner, a giant version of the Gemini sparkle (or Google "G") rendered very faint and low-opacity in a slightly deeper blue/purple tone, bleeding off the edge, as a subtle watermark. Barely there.
 
-FOOTER — a slim line at the very bottom, centered, small condensed all-caps in white, letter-spacing 0.2em: "APOLO SANTOS · CC BY-NC-SA 4.0", with the bullet as separator. No series tag, no post number.
+FOOTER — a slim line at the very bottom, centered, small condensed all-caps in white, letter-spacing 0.2em: "APOLO SANTOS", with the bullet as separator. No series tag, no post number.
 
 MOOD — modern, confident, high contrast. Blue-to-purple gradient + white sparkle + the big cream "A RÉGUA MUDOU" sticker read instantly as a sharp tech hot-take card. Flat design, social-native.
 
@@ -86,7 +86,7 @@ Central text block framed by a thin rounded-rectangle white outline:
 - "NÃO É O MAIS ESPERTO." in white condensed caps (tilde on NÃO, acute on É)
 - "É O MAIS CONFIÁVEL." in white (acute on É and CONFIÁVEL)
 
-Faint giant ghost sparkle bleeding off a bottom corner. Footer "APOLO SANTOS · CC BY-NC-SA 4.0" small in white. No photo, no 3D, no face. vertical 4:5 1080x1350.
+Faint giant ghost sparkle bleeding off a bottom corner. Footer "APOLO SANTOS" small in white. No photo, no 3D, no face. vertical 4:5 1080x1350.
 ```
 
 ---
@@ -141,7 +141,7 @@ no low contrast box (the A RÉGUA MUDOU box must clearly contrast — it is crea
 - [ ] **Acentos conferidos:** `RÉGUA` (É), `NÃO` (til), `É` (2x), `CONFIÁVEL` (Á)
 - [ ] Tipografia condensada pesada (Anton / Druk / Compacta / Bebas Black)
 - [ ] **Ghost do sparkle/G** apagado sangrando num canto inferior
-- [ ] **Footer LIMPO:** `APOLO SANTOS · CC BY-NC-SA 4.0`, sem tag de serie, sem numero de post
+- [ ] **Footer LIMPO:** `APOLO SANTOS`, sem tag de serie, sem numero de post
 - [ ] Alto contraste, legivel em 3s no scroll mobile
 
 > Se falhar (logo deformado, caixa sem contraste, acento omitido, fundo nao-flat, footer com tag de serie), regenerar ou montar em editor com logo oficial.

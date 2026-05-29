@@ -33,7 +33,7 @@ Um poster social-native FLAT, fundo laranja Itau (`#EC7000`) com leve gradiente 
 - **CAIXA-MARTELO (caixa creme `#F4EFE5` arredondada, texto azul Itau `#003399`, GIGANTE):** `INFRAESTRUTURA`
 
 ### Footer (banda inferior discreta, LIMPO — regra v2.1)
-`APOLO SANTOS  ·  CC BY-NC-SA 4.0`
+`APOLO SANTOS`
 
 > **Acentuacao (regra dura):** `ITAÚ` leva agudo no U (no logo e no kicker). A money line NAO tem acento (`IA DEIXOU DE SER PROJETO`, `VIROU`, `INFRAESTRUTURA`) — conferir que nenhum acento e inventado. Se `ITAÚ` sair sem acento no kicker, corrigir no editor.
 
@@ -68,7 +68,7 @@ CENTRAL TEXT BLOCK — framed by a thin rounded-rectangle outline in white. Insi
 
 GHOST LOGO — in a bottom corner, a giant version of the Itaú square/wordmark rendered very faint and low-opacity in a slightly darker burnt-orange tone, bleeding off the edge, as a subtle watermark. Barely there.
 
-FOOTER — a slim line at the very bottom, centered, small condensed all-caps in white, letter-spacing 0.2em: "APOLO SANTOS · CC BY-NC-SA 4.0", with the bullet as separator. No series tag, no post number.
+FOOTER — a slim line at the very bottom, centered, small condensed all-caps in white, letter-spacing 0.2em: "APOLO SANTOS", with the bullet as separator. No series tag, no post number.
 
 MOOD — confident, institutional but punchy, high contrast. Orange + blue + the big cream INFRAESTRUTURA sticker read instantly as a strong thesis card. Flat design, social-native.
 
@@ -87,7 +87,7 @@ Central text block framed by a thin rounded-rectangle white outline:
 - "VIROU" smaller in white
 - "INFRAESTRUTURA" GIANT in Itaú blue #003399 inside a rounded cream #F4EFE5 sticker box (focal point)
 
-Faint giant ghost logo bleeding off a bottom corner. Footer "APOLO SANTOS · CC BY-NC-SA 4.0" small in white. No photo, no 3D, no face, no neon. vertical 4:5 1080x1350.
+Faint giant ghost logo bleeding off a bottom corner. Footer "APOLO SANTOS" small in white. No photo, no 3D, no face, no neon. vertical 4:5 1080x1350.
 ```
 
 ---
@@ -141,7 +141,7 @@ no low contrast box (the INFRAESTRUTURA box must clearly contrast against the or
 - [ ] **Caixa-martelo `INFRAESTRUTURA`** GIGANTE: caixa CREME `#F4EFE5` arredondada com texto AZUL ITAU `#003399` (contraste com fundo saturado — CRITICO)
 - [ ] Tipografia condensada pesada (Anton / Druk / Compacta / Bebas Black)
 - [ ] **Ghost do logo** apagado sangrando num canto inferior
-- [ ] **Footer LIMPO:** `APOLO SANTOS · CC BY-NC-SA 4.0`, sem tag de serie, sem numero de post
+- [ ] **Footer LIMPO:** `APOLO SANTOS`, sem tag de serie, sem numero de post
 - [ ] Alto contraste, legivel em 3s no scroll mobile
 
 > Se falhar (logo deformado, caixa sem contraste, `ITAÚ` sem acento, fundo nao-flat, footer com tag de serie), regenerar ou montar em editor com logo oficial.

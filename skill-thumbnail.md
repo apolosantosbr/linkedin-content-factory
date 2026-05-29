@@ -938,6 +938,7 @@ h1 {
 6. **Fonte citada** — todo dado deve ter fonte visivel (regra obrigatoria)
 7. **Acentos corretos** — portugues com acentos (não, é, só, começo)
 8. **Variedade** — nunca repetir o mesmo template 2 vezes seguidas
+9. **Footer = SO o nome** — o footer/assinatura e APENAS `APOLO SANTOS`. NUNCA adicionar codigo de licenca (CC BY-NC-SA 4.0, Creative Commons, BY-NC, copyright, etc), tag de serie ou numero de post. Decisao do Apolo 29/05/2026.
 
 ---
 
@@ -968,6 +969,7 @@ h1 {
 - [ ] Contraste alto?
 - [ ] Cores dentro da paleta brand (ou variacao justificada)?
 - [ ] APOLO SANTOS presente?
+- [ ] Footer SEM codigo de licenca (zero CC BY-NC-SA / Creative Commons / copyright)?
 - [ ] Fonte citada se houver dado?
 - [ ] Acentos corretos (não, é, só, começo)?
 - [ ] Se usou foto: tratamento (overlay, duotone) esta forte o suficiente?

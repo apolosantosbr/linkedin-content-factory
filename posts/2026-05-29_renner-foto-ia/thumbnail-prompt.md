@@ -34,7 +34,7 @@ Um poster social-native FLAT, fundo vermelho Renner (`#ED1C24`) full bleed com l
 - **CAIXA-MARTELO (caixa creme `#F5F0EA` arredondada, texto vermelho Renner `#ED1C24`, GIGANTE):** `ESTÚDIO`
 
 ### Footer (banda inferior discreta, LIMPO — regra v2.1)
-`APOLO SANTOS  ·  CC BY-NC-SA 4.0`
+`APOLO SANTOS`
 
 > **Acentuacao (regra dura):** `NÃO` leva til no A; `ESTÚDIO` leva agudo no U (em all-caps). `SUBSTITUIU`, `ESTILISTA`, `O` sem acento. Se `NÃO` ou `ESTÚDIO` sairem errados, regenerar ou corrigir no editor.
 
@@ -68,7 +68,7 @@ CENTRAL TEXT BLOCK — framed by a thin rounded-rectangle outline in white. Insi
 
 GHOST LOGO — in a bottom corner, a giant version of the "Renner" wordmark rendered very faint and low-opacity in a slightly deeper red tone, bleeding off the edge, as a subtle watermark. Barely there.
 
-FOOTER — a slim line at the very bottom, centered, small condensed all-caps in cream #F5F0EA, letter-spacing 0.2em: "APOLO SANTOS · CC BY-NC-SA 4.0", with the bullet as separator. No series tag, no post number.
+FOOTER — a slim line at the very bottom, centered, small condensed all-caps in cream #F5F0EA, letter-spacing 0.2em: "APOLO SANTOS", with the bullet as separator. No series tag, no post number.
 
 MOOD — fashion-editorial, confident, high contrast. Vivid red + white wordmark + the big cream ESTÚDIO sticker read instantly as a sharp statement card. Flat design, social-native.
 
@@ -87,7 +87,7 @@ Central text block framed by a thin rounded-rectangle white outline:
 - "SUBSTITUIU O" smaller in cream
 - "ESTÚDIO" GIANT in Renner red #ED1C24 inside a rounded cream #F5F0EA sticker box (focal point, acute on U visible)
 
-Faint giant ghost "Renner" wordmark bleeding off a bottom corner. Footer "APOLO SANTOS · CC BY-NC-SA 4.0" small in cream. No photo, no 3D, no face, no split. vertical 4:5 1080x1350.
+Faint giant ghost "Renner" wordmark bleeding off a bottom corner. Footer "APOLO SANTOS" small in cream. No photo, no 3D, no face, no split. vertical 4:5 1080x1350.
 ```
 
 ---
@@ -141,7 +141,7 @@ no low contrast box (the ESTÚDIO box must clearly contrast against the red back
 - [ ] **Caixa-martelo `ESTÚDIO`** GIGANTE: caixa CREME `#F5F0EA` arredondada com texto VERMELHO RENNER `#ED1C24` (contraste — CRITICO), com `ESTÚDIO` Ú agudo visivel
 - [ ] Tipografia condensada pesada (Anton / Druk / Compacta / Bebas Black)
 - [ ] **Ghost do wordmark** apagado sangrando num canto inferior
-- [ ] **Footer LIMPO:** `APOLO SANTOS · CC BY-NC-SA 4.0`, sem tag de serie, sem numero de post
+- [ ] **Footer LIMPO:** `APOLO SANTOS`, sem tag de serie, sem numero de post
 - [ ] Alto contraste, legivel em 3s no scroll mobile
 
 > Se falhar (logo deformado, caixa sem contraste, `NÃO`/`ESTÚDIO` sem acento, fundo nao-flat, footer com tag de serie), regenerar ou montar em editor com wordmark oficial.

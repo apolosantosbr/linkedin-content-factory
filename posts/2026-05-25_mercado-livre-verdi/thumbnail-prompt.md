@@ -30,7 +30,7 @@ Um poster social-native FLAT, fundo amarelo Mercado Livre (`#FFE600`) com leve g
 - **CAIXA-MARTELO (caixa navy `#2D3277` arredondada, texto creme `#F4EFE5`, GIGANTE):** `COLEGA`
 
 ### Footer (banda inferior discreta, LIMPO — regra v2.1)
-`APOLO SANTOS  ·  CC BY-NC-SA 4.0`
+`APOLO SANTOS`
 
 > **Acentuacao (regra dura):** `NÃO` leva til no A (em all-caps). `COLEGA`, `CRIOU`, `UM`, `CHATBOT`, `MERCADO LIVRE` sem acento. Se `NÃO` sair sem til, regenerar ou corrigir no editor.
 
@@ -64,7 +64,7 @@ CENTRAL TEXT BLOCK — framed by a thin rounded-rectangle outline in deep blue #
 
 GHOST LOGO — in a bottom corner, a giant version of the Mercado Livre wordmark/handshake rendered very faint and low-opacity in a slightly darker amber tone, bleeding off the edge of the canvas, as a subtle watermark texture. Barely there.
 
-FOOTER — a slim line at the very bottom, centered, small condensed all-caps in deep blue #2D3277, letter-spacing 0.2em: "APOLO SANTOS · CC BY-NC-SA 4.0", with the bullet as separator. No series tag, no post number.
+FOOTER — a slim line at the very bottom, centered, small condensed all-caps in deep blue #2D3277, letter-spacing 0.2em: "APOLO SANTOS", with the bullet as separator. No series tag, no post number.
 
 MOOD — confident, brand-forward, high contrast. The yellow + blue + the big COLEGA sticker read instantly as a punchy statement card. Flat design, social-native, scroll-stopping.
 
@@ -83,7 +83,7 @@ Central text block framed by a thin rounded-rectangle blue #2D3277 outline:
 - "CRIOU UM" smaller in deep blue
 - "COLEGA" GIANT in warm cream #F4EFE5 inside a rounded deep-blue #2D3277 sticker box (focal point)
 
-Faint giant ghost wordmark bleeding off a bottom corner. Footer "APOLO SANTOS · CC BY-NC-SA 4.0" small in blue. No photo, no 3D, no face, no neon. vertical 4:5 1080x1350.
+Faint giant ghost wordmark bleeding off a bottom corner. Footer "APOLO SANTOS" small in blue. No photo, no 3D, no face, no neon. vertical 4:5 1080x1350.
 ```
 
 ---
@@ -136,7 +136,7 @@ no low contrast box (the COLEGA box must clearly contrast against the yellow bac
 - [ ] **Caixa-martelo `COLEGA`** GIGANTE: caixa NAVY `#2D3277` arredondada com texto CREME `#F4EFE5` (contraste com o fundo claro — CRITICO)
 - [ ] Tipografia condensada pesada (Anton / Druk / Compacta / Bebas Black) — NAO Impact, NAO meme font
 - [ ] **Ghost do wordmark** apagado sangrando num canto inferior
-- [ ] **Footer LIMPO:** `APOLO SANTOS · CC BY-NC-SA 4.0`, sem tag de serie, sem numero de post
+- [ ] **Footer LIMPO:** `APOLO SANTOS`, sem tag de serie, sem numero de post
 - [ ] Alto contraste, legivel em 3s no scroll mobile
 
 > Se falhar (logo deformado, caixa sem contraste, `NÃO` sem til, fundo nao-flat, footer com tag de serie), regenerar ou montar em editor com logo oficial.

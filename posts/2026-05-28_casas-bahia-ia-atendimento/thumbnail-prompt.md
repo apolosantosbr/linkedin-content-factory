@@ -33,7 +33,7 @@ Um poster social-native FLAT, fundo azul Casas Bahia (`#1A2C8F`) full bleed com 
 - **Fecho (branco `#FFFFFF`):** `QUEM VENDE.`
 
 ### Footer (banda inferior discreta, LIMPO — regra v2.1)
-`APOLO SANTOS  ·  CC BY-NC-SA 4.0`
+`APOLO SANTOS`
 
 > **Acentuacao (regra dura):** `NÃO` leva til no A. `LIBEROU`, `QUEM`, `VENDE`, `VENDEU`, `MAIS` sem acento. Se `NÃO` sair sem til, regenerar ou corrigir no editor.
 
@@ -68,7 +68,7 @@ CENTRAL TEXT BLOCK — framed by a thin rounded-rectangle outline in white. Insi
 
 GHOST LOGO — in a bottom corner, a giant version of the Baianinho mascot / Casas Bahia wordmark rendered very faint and low-opacity in a slightly deeper navy tone, bleeding off the edge, as a subtle watermark. Barely there.
 
-FOOTER — a slim line at the very bottom, centered, small condensed all-caps in white, letter-spacing 0.2em: "APOLO SANTOS · CC BY-NC-SA 4.0", with the bullet as separator. No series tag, no post number.
+FOOTER — a slim line at the very bottom, centered, small condensed all-caps in white, letter-spacing 0.2em: "APOLO SANTOS", with the bullet as separator. No series tag, no post number.
 
 MOOD — confident, retail-punchy, high contrast. Blue + white logo + the big cream LIBEROU sticker with red text read instantly as a strong statement card. Flat design, social-native.
 
@@ -87,7 +87,7 @@ Central text block framed by a thin rounded-rectangle white outline:
 - "LIBEROU" GIANT in Casas Bahia red #E30613 inside a rounded cream #F4EFE5 sticker box (focal point)
 - "QUEM VENDE." in white
 
-Faint giant ghost mascot/wordmark bleeding off a bottom corner. Footer "APOLO SANTOS · CC BY-NC-SA 4.0" small in white. No photo, no 3D, no face, no gauge. vertical 4:5 1080x1350.
+Faint giant ghost mascot/wordmark bleeding off a bottom corner. Footer "APOLO SANTOS" small in white. No photo, no 3D, no face, no gauge. vertical 4:5 1080x1350.
 ```
 
 ---
@@ -142,7 +142,7 @@ no low contrast box (the LIBEROU box must clearly contrast against the blue back
 - [ ] **Fecho `QUEM VENDE.`** em branco
 - [ ] Tipografia condensada pesada (Anton / Druk / Compacta / Bebas Black)
 - [ ] **Ghost do Baianinho/wordmark** apagado sangrando num canto inferior
-- [ ] **Footer LIMPO:** `APOLO SANTOS · CC BY-NC-SA 4.0`, sem tag de serie, sem numero de post
+- [ ] **Footer LIMPO:** `APOLO SANTOS`, sem tag de serie, sem numero de post
 - [ ] Alto contraste, legivel em 3s no scroll mobile
 
 > Se falhar (logo/mascote deformado, caixa sem contraste, `NÃO` sem til, fundo nao-flat, footer com tag de serie), regenerar ou montar em editor com logo oficial.
