@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<title>Teatro Digital — 65% vs 6%</title>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap');
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+.image {
+  width: 1080px;
+  height: 1350px;
+  background: #1F0A0A;
+  background-image:
+    radial-gradient(at 20% 20%, rgba(63, 163, 77, 0.10) 0%, transparent 55%),
+    radial-gradient(at 80% 80%, rgba(200, 57, 47, 0.10) 0%, transparent 55%),
+    linear-gradient(180deg, #1F0A0A 0%, #0F0606 100%);
+  position: relative;
+  overflow: hidden;
+  font-family: 'Inter', -apple-system, system-ui, sans-serif;
+  color: #FFFFFF;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Cortina sutil — gradient texturizado top */
+.image::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 80px;
+  background: linear-gradient(180deg, rgba(201, 161, 74, 0.18) 0%, transparent 100%);
+  pointer-events: none;
+}
+
+/* Header */
+.header {
+  position: relative;
+  z-index: 3;
+  padding: 50px 56px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.kicker {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  padding: 9px 20px;
+  background: rgba(201, 161, 74, 0.10);
+  border: 1px solid rgba(201, 161, 74, 0.45);
+  border-radius: 999px;
+  font-size: 12px;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  font-weight: 800;
+  color: #C9A14A;
+}
+
+.kicker .dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: #C9A14A;
+  box-shadow: 0 0 10px #C9A14A;
+}
+
+.tag-right {
+  font-size: 10px;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.4);
+  font-weight: 700;
+  text-align: right;
+  line-height: 1.5;
+}
+
+/* Split duplo */
+.split {
+  flex: 1;
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
+  align-items: center;
+  position: relative;
+  z-index: 2;
+  margin-top: 24px;
+}
+
+.col {
+  padding: 40px 48px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.col.right {
+  align-items: flex-end;
+  text-align: right;
+}
+
+.col-label {
+  font-family: 'Inter', sans-serif;
+  font-size: 14px;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  font-weight: 700;
+  margin-bottom: 8px;
+}
+
+.col.left .col-label { color: #6FCB7A; }
+.col.right .col-label { color: #FF7A6E; }
+
+.col-num {
+  font-family: 'Playfair Display', serif;
+  font-weight: 900;
+  font-size: 230px;
+  line-height: 0.92;
+  letter-spacing: -8px;
+  margin-bottom: 6px;
+}
+
+.col.left .col-num { color: #3FA34D; }
+.col.right .col-num { color: #C8392F; }
+
+.col-headline {
+  font-size: 26px;
+  font-weight: 800;
+  line-height: 1.05;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: #FFFFFF;
+  max-width: 320px;
+}
+
+.col.right .col-headline { max-width: 380px; }
+
+.col-source {
+  margin-top: 18px;
+  font-size: 12px;
+  letter-spacing: 0.5px;
+  font-style: italic;
+  color: rgba(255, 255, 255, 0.55);
+  font-weight: 500;
+  max-width: 280px;
+}
+
+/* Linha vertical "cortina" */
+.divider {
+  width: 2px;
+  height: 76%;
+  background: linear-gradient(180deg, transparent 0%, #C9A14A 12%, #C9A14A 88%, transparent 100%);
+  position: relative;
+}
+
+.divider::before,
+.divider::after {
+  content: '';
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background: #C9A14A;
+  box-shadow: 0 0 18px rgba(201, 161, 74, 0.55);
+}
+
+.divider::before { top: -8px; }
+.divider::after { bottom: -8px; }
+
+/* Center label "vs" */
+.vs-label {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  background: #1F0A0A;
+  border: 2px solid #C9A14A;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Playfair Display', serif;
+  font-style: italic;
+  font-weight: 900;
+  font-size: 26px;
+  color: #C9A14A;
+  z-index: 3;
+}
+
+/* Faixa inferior — TEATRO DIGITAL */
+.banner {
+  position: relative;
+  z-index: 3;
+  padding: 28px 56px 26px;
+  border-top: 1px solid rgba(201, 161, 74, 0.35);
+  background: rgba(0, 0, 0, 0.35);
+}
+
+.banner-pre {
+  font-size: 12px;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  color: #C9A14A;
+  font-weight: 700;
+  margin-bottom: 6px;
+}
+
+.banner-title {
+  font-family: 'Bebas Neue', 'Anton', sans-serif;
+  font-weight: 900;
+  font-size: 134px;
+  line-height: 0.92;
+  letter-spacing: 4px;
+  color: #FFFFFF;
+  text-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+}
+
+.banner-title .accent {
+  color: #C9A14A;
+}
+
+.footer {
+  position: relative;
+  z-index: 3;
+  padding: 18px 56px 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 11px;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.55);
+  font-weight: 700;
+}
+
+.footer .author {
+  color: #C9A14A;
+  letter-spacing: 5px;
+  font-weight: 800;
+}
+</style>
+</head>
+<body>
+<div class="image">
+
+  <div class="header">
+    <div class="kicker"><span class="dot"></span>PARADOXO 2026 · ADOÇÃO vs RESULTADO</div>
+    <div class="tag-right">POST LINKEDIN<br>Maio 2026</div>
+  </div>
+
+  <div class="split">
+    <div class="col left">
+      <div class="col-label">ADOTARAM IA</div>
+      <div class="col-num">65%</div>
+      <div class="col-headline">DAS PMEs BRASILEIRAS</div>
+      <div class="col-source">Sebrae + OpenClaw, 2026</div>
+    </div>
+
+    <div class="divider"></div>
+
+    <div class="col right">
+      <div class="col-label">TÊM EBIT VINDO DE IA</div>
+      <div class="col-num">6%</div>
+      <div class="col-headline">DAS EMPRESAS NO MUNDO</div>
+      <div class="col-source">McKinsey State of AI, 2025</div>
+    </div>
+
+    <div class="vs-label">vs</div>
+  </div>
+
+  <div class="banner">
+    <div class="banner-pre">eu chamo isso de</div>
+    <div class="banner-title">TEATRO <span class="accent">DIGITAL</span>.</div>
+  </div>
+
+  <div class="footer">
+    <span class="author">APOLO SANTOS</span>
+    <span>Fontes · Sebrae 2026 + McKinsey 2025</span>
+  </div>
+
+</div>
+</body>
+</html>

@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<title>OS 4Ds DA FLUENCIA EM IA</title>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@900&family=Bebas+Neue&family=Inter:wght@400;500;600;700&display=swap');
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+html, body {
+  background: #0F1E33;
+}
+
+.image {
+  width: 1080px;
+  height: 1350px;
+  background: #0F1E33;
+  position: relative;
+  font-family: 'Inter', sans-serif;
+  color: #F4EFE5;
+  overflow: hidden;
+  display: grid;
+  grid-template-rows: 200px 1fr 130px;
+}
+
+/* Subtle radial gradient over navy for depth */
+.image::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background:
+    radial-gradient(ellipse at 50% 0%, rgba(59, 122, 110, 0.18) 0%, transparent 55%),
+    radial-gradient(ellipse at 50% 100%, rgba(201, 161, 74, 0.08) 0%, transparent 60%);
+  pointer-events: none;
+  z-index: 0;
+}
+
+/* Outer frame border */
+.image::after {
+  content: '';
+  position: absolute;
+  inset: 28px;
+  border: 1px solid rgba(201, 161, 74, 0.35);
+  pointer-events: none;
+  z-index: 5;
+}
+
+/* HEADER BAND */
+.header {
+  position: relative;
+  z-index: 2;
+  padding: 60px 70px 0 70px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.eyebrow {
+  font-family: 'Inter', sans-serif;
+  font-size: 14px;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  color: #3B7A6E;
+  font-weight: 600;
+  margin-bottom: 14px;
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.eyebrow .dash {
+  width: 28px;
+  height: 1px;
+  background: #3B7A6E;
+}
+
+.headline {
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 88px;
+  line-height: 0.95;
+  letter-spacing: 1px;
+  color: #F4EFE5;
+  text-transform: uppercase;
+}
+
+.headline .accent {
+  color: #C9A14A;
+}
+
+.subheader {
+  margin-top: 18px;
+  font-family: 'Inter', sans-serif;
+  font-size: 19px;
+  letter-spacing: 1px;
+  color: #A8B2C1;
+  font-style: italic;
+  font-weight: 400;
+}
+
+/* QUADRANTS GRID */
+.grid {
+  position: relative;
+  z-index: 2;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  margin: 14px 70px 14px 70px;
+  border: 1px solid rgba(201, 161, 74, 0.55);
+}
+
+/* Center cross divider (gold) */
+.grid::before {
+  content: '';
+  position: absolute;
+  top: 0; bottom: 0;
+  left: 50%;
+  width: 1px;
+  background: rgba(201, 161, 74, 0.55);
+  z-index: 1;
+}
+.grid::after {
+  content: '';
+  position: absolute;
+  left: 0; right: 0;
+  top: 50%;
+  height: 1px;
+  background: rgba(201, 161, 74, 0.55);
+  z-index: 1;
+}
+
+.quadrant {
+  position: relative;
+  padding: 44px 42px 38px 42px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 0;
+}
+
+.q-top {
+  display: flex;
+  flex-direction: column;
+}
+
+.q-num {
+  font-family: 'Playfair Display', serif;
+  font-weight: 900;
+  font-size: 130px;
+  line-height: 0.85;
+  color: #C9A14A;
+  letter-spacing: -3px;
+}
+
+.q-num sup {
+  font-size: 56px;
+  vertical-align: baseline;
+  position: relative;
+  top: -42px;
+  margin-left: 4px;
+  font-weight: 900;
+  letter-spacing: 0;
+}
+
+.q-name {
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 46px;
+  letter-spacing: 4px;
+  color: #F4EFE5;
+  margin-top: 18px;
+  text-transform: uppercase;
+  line-height: 1;
+}
+
+.q-line {
+  font-family: 'Inter', sans-serif;
+  font-size: 17px;
+  line-height: 1.45;
+  color: #A8B2C1;
+  font-weight: 500;
+  margin-top: 28px;
+  padding-top: 18px;
+  border-top: 1px solid rgba(168, 178, 193, 0.18);
+  max-width: 360px;
+}
+
+/* Corner tag (D1.. visual marker top-right of each quadrant) */
+.q-tag {
+  position: absolute;
+  top: 22px;
+  right: 26px;
+  font-family: 'Inter', sans-serif;
+  font-size: 11px;
+  letter-spacing: 3px;
+  color: rgba(201, 161, 74, 0.7);
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+/* FOOTER BAND */
+.footer {
+  position: relative;
+  z-index: 2;
+  padding: 0 70px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  gap: 8px;
+}
+
+.footer .rule {
+  width: 80px;
+  height: 1px;
+  background: #C9A14A;
+  margin-bottom: 6px;
+}
+
+.footer .author {
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 26px;
+  letter-spacing: 6px;
+  color: #F4EFE5;
+}
+
+.footer .credit {
+  font-family: 'Inter', sans-serif;
+  font-size: 13px;
+  letter-spacing: 2.5px;
+  color: #A8B2C1;
+  text-transform: uppercase;
+  font-weight: 500;
+}
+
+.footer .credit .sep {
+  color: #C9A14A;
+  margin: 0 10px;
+}
+
+/* Decorative corner marks on outer frame */
+.corner {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  border-color: #C9A14A;
+  z-index: 6;
+}
+.corner.tl { top: 22px; left: 22px; border-top: 2px solid; border-left: 2px solid; }
+.corner.tr { top: 22px; right: 22px; border-top: 2px solid; border-right: 2px solid; }
+.corner.bl { bottom: 22px; left: 22px; border-bottom: 2px solid; border-left: 2px solid; }
+.corner.br { bottom: 22px; right: 22px; border-bottom: 2px solid; border-right: 2px solid; }
+</style>
+</head>
+<body>
+<div class="image">
+
+  <div class="corner tl"></div>
+  <div class="corner tr"></div>
+  <div class="corner bl"></div>
+  <div class="corner br"></div>
+
+  <!-- HEADER -->
+  <div class="header">
+    <div class="eyebrow">
+      <span class="dash"></span>
+      <span>FRAMEWORK ANTHROPIC</span>
+      <span class="dash"></span>
+    </div>
+    <h1 class="headline">OS <span class="accent">4Ds</span> DA FLUÊNCIA EM IA</h1>
+    <div class="subheader">framework Anthropic, traduzido pra PME brasileira</div>
+  </div>
+
+  <!-- QUADRANTS -->
+  <div class="grid">
+
+    <!-- TOP-LEFT D1 -->
+    <div class="quadrant">
+      <div class="q-tag">QUADRANTE 01</div>
+      <div class="q-top">
+        <div class="q-num">D<sup>1</sup></div>
+        <div class="q-name">DELEGATION</div>
+      </div>
+      <div class="q-line">o que humano faz,<br>o que IA faz</div>
+    </div>
+
+    <!-- TOP-RIGHT D2 -->
+    <div class="quadrant">
+      <div class="q-tag">QUADRANTE 02</div>
+      <div class="q-top">
+        <div class="q-num">D<sup>2</sup></div>
+        <div class="q-name">DESCRIPTION</div>
+      </div>
+      <div class="q-line">como você conversa<br>com a IA</div>
+    </div>
+
+    <!-- BOTTOM-LEFT D4 -->
+    <div class="quadrant">
+      <div class="q-tag">QUADRANTE 04</div>
+      <div class="q-top">
+        <div class="q-num">D<sup>4</sup></div>
+        <div class="q-name">DILIGENCE</div>
+      </div>
+      <div class="q-line">quem responde<br>pelo resultado</div>
+    </div>
+
+    <!-- BOTTOM-RIGHT D3 -->
+    <div class="quadrant">
+      <div class="q-tag">QUADRANTE 03</div>
+      <div class="q-top">
+        <div class="q-num">D<sup>3</sup></div>
+        <div class="q-name">DISCERNMENT</div>
+      </div>
+      <div class="q-line">como você avalia<br>o output</div>
+    </div>
+
+  </div>
+
+  <!-- FOOTER -->
+  <div class="footer">
+    <div class="rule"></div>
+    <div class="author">APOLO SANTOS</div>
+    <div class="credit">CERTIFICADO ANTHROPIC AI FLUENCY <span class="sep">·</span> CC BY-NC-SA 4.0</div>
+  </div>
+
+</div>
+</body>
+</html>

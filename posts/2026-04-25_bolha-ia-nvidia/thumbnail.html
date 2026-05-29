@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<title>Bolha da IA — Editorial Financial Alert</title>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;800;900&display=swap');
+* { margin: 0; padding: 0; box-sizing: border-box; }
+@page { size: 1080px 1350px; margin: 0; }
+html, body { margin: 0; padding: 0; background: #5C1A1B; width: 1080px; height: 1350px; }
+.image {
+  width: 1080px;
+  height: 1350px;
+  position: relative;
+  overflow: hidden;
+  font-family: 'Inter', -apple-system, sans-serif;
+  background: #5C1A1B;
+  background-image:
+    radial-gradient(ellipse at 30% 20%, rgba(212, 175, 55, 0.12) 0%, transparent 60%),
+    radial-gradient(ellipse at 70% 80%, rgba(0, 0, 0, 0.35) 0%, transparent 60%);
+  padding: 70px 60px 120px 60px;
+  color: #FFFFFF;
+}
+.paper-noise {
+  position: absolute;
+  inset: 0;
+  opacity: 0.08;
+  pointer-events: none;
+  background-image:
+    repeating-radial-gradient(circle at 20% 30%, rgba(255,255,255,0.8) 0px, transparent 2px, transparent 4px),
+    repeating-radial-gradient(circle at 70% 70%, rgba(0,0,0,0.6) 0px, transparent 3px, transparent 6px);
+  mix-blend-mode: overlay;
+}
+.chart {
+  position: absolute;
+  top: 440px;
+  left: 0;
+  right: 0;
+  height: 340px;
+  z-index: 1;
+  opacity: 0.22;
+}
+.chart svg { width: 100%; height: 100%; display: block; }
+.header {
+  position: relative;
+  z-index: 3;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 16px;
+  border-bottom: 1px solid rgba(212, 175, 55, 0.4);
+}
+.masthead {
+  font-family: 'Playfair Display', serif;
+  font-size: 30px;
+  font-weight: 900;
+  letter-spacing: 1px;
+  color: #D4AF37;
+}
+.badge {
+  background: #D4AF37;
+  color: #0A0A0A;
+  font-size: 18px;
+  font-weight: 800;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  padding: 10px 18px;
+}
+.category {
+  position: relative;
+  z-index: 3;
+  margin-top: 40px;
+  font-size: 22px;
+  font-weight: 600;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.75);
+}
+.number-label {
+  position: relative;
+  z-index: 3;
+  margin-top: 60px;
+  font-size: 26px;
+  font-weight: 500;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.65);
+}
+.big-number {
+  position: relative;
+  z-index: 3;
+  font-family: 'Playfair Display', serif;
+  font-size: 290px;
+  font-weight: 900;
+  color: #D4AF37;
+  line-height: 0.9;
+  letter-spacing: -6px;
+  margin-top: 8px;
+  text-shadow: 0 6px 30px rgba(0, 0, 0, 0.45);
+}
+.tagline {
+  position: relative;
+  z-index: 3;
+  margin-top: 32px;
+  font-size: 38px;
+  font-weight: 500;
+  line-height: 1.25;
+  color: #FFFFFF;
+  max-width: 90%;
+}
+.tagline strong {
+  font-weight: 800;
+  color: #F4D35E;
+}
+.players {
+  position: relative;
+  z-index: 3;
+  margin-top: 40px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 14px 28px;
+  font-size: 22px;
+  font-weight: 700;
+  color: rgba(255, 255, 255, 0.85);
+  letter-spacing: 1px;
+  border-top: 1px dashed rgba(212, 175, 55, 0.35);
+  border-bottom: 1px dashed rgba(212, 175, 55, 0.35);
+  padding: 20px 0;
+}
+.players span { display: flex; align-items: center; }
+.players span::before { content: '◆'; color: #D4AF37; margin-right: 10px; font-size: 18px; }
+.question-bar {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: #0A0A0A;
+  padding: 32px 60px 36px;
+  border-top: 3px solid #D4AF37;
+  z-index: 5;
+}
+.question {
+  font-family: 'Playfair Display', serif;
+  font-size: 44px;
+  font-weight: 800;
+  font-style: italic;
+  color: #D4AF37;
+  text-align: center;
+  letter-spacing: 0.5px;
+}
+.bottom-line {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 14px;
+  color: rgba(255, 255, 255, 0.55);
+  font-size: 16px;
+  letter-spacing: 1.5px;
+}
+.bottom-line .source {
+  font-style: italic;
+  font-size: 14px;
+  color: rgba(255, 255, 255, 0.42);
+}
+</style>
+</head>
+<body>
+<div class="image">
+  <div class="paper-noise"></div>
+
+  <div class="chart" aria-hidden="true">
+    <svg viewBox="0 0 1080 340" preserveAspectRatio="none">
+      <defs>
+        <linearGradient id="chartFill" x1="0" x2="0" y1="0" y2="1">
+          <stop offset="0%" stop-color="#D4AF37" stop-opacity="0.7"/>
+          <stop offset="100%" stop-color="#D4AF37" stop-opacity="0"/>
+        </linearGradient>
+      </defs>
+      <path d="M0,320 L80,310 L160,300 L240,280 L320,260 L400,220 L480,180 L560,140 L640,100 L720,70 L800,50 L880,45 L960,42 L1040,38 L1080,36 L1080,340 L0,340 Z" fill="url(#chartFill)"/>
+      <path d="M0,320 L80,310 L160,300 L240,280 L320,260 L400,220 L480,180 L560,140 L640,100 L720,70 L800,50 L880,45 L960,42 L1040,38 L1080,36" fill="none" stroke="#D4AF37" stroke-width="3"/>
+    </svg>
+  </div>
+
+  <div class="header">
+    <div class="masthead">SIMPLIFICA</div>
+    <div class="badge">MERCADO 2026</div>
+  </div>
+
+  <div class="category">Relatório · Bolha da IA</div>
+  <div class="number-label">Capex combinado em 2026</div>
+  <div class="big-number">US$ 320 BI</div>
+
+  <div class="tagline">A <strong>aposta mais cara da história</strong> em infraestrutura de IA.</div>
+
+  <div class="players">
+    <span>Microsoft</span>
+    <span>Google</span>
+    <span>Meta</span>
+    <span>Amazon</span>
+  </div>
+
+  <div class="question-bar">
+    <div class="question">Bolha histórica ou nova era?</div>
+    <div class="bottom-line">
+      <span>Apolo Santos</span>
+      <span class="source">Fontes: The Information 2025 · Sequoia 2024 · Bloomberg 2025</span>
+    </div>
+  </div>
+</div>
+</body>
+</html>

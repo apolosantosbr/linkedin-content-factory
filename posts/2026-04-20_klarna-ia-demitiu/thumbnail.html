@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<title>Klarna — Editorial Dark Numeric</title>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@900&display=swap');
+* { margin: 0; padding: 0; box-sizing: border-box; }
+@page { size: 1080px 1350px; margin: 0; }
+html, body { margin: 0; padding: 0; background: #0A0A14; width: 1080px; height: 1350px; }
+.image {
+  width: 1080px;
+  height: 1350px;
+  position: relative;
+  overflow: hidden;
+  font-family: 'Inter', -apple-system, sans-serif;
+  background:
+    linear-gradient(180deg, rgba(10,10,20,0.75) 0%, rgba(10,10,20,0.95) 100%),
+    url('https://source.unsplash.com/1080x1350/?empty,office,night,dark') center/cover;
+}
+.image::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background:
+    radial-gradient(ellipse at 20% 30%, rgba(30, 60, 110, 0.35) 0%, transparent 55%),
+    radial-gradient(ellipse at 80% 80%, rgba(230, 57, 70, 0.15) 0%, transparent 55%);
+}
+.badge {
+  position: absolute;
+  top: 60px;
+  left: 60px;
+  background: #E63946;
+  color: #FFFFFF;
+  font-size: 20px;
+  font-weight: 800;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  padding: 12px 22px;
+  z-index: 2;
+}
+.top-text {
+  position: absolute;
+  top: 200px;
+  left: 80px;
+  right: 80px;
+  text-align: center;
+  color: #FFFFFF;
+  font-size: 48px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  z-index: 2;
+}
+.number {
+  position: absolute;
+  top: 310px;
+  left: 0;
+  right: 0;
+  text-align: center;
+  font-family: 'Playfair Display', serif;
+  font-size: 540px;
+  font-weight: 900;
+  color: #FFFFFF;
+  line-height: 0.85;
+  letter-spacing: -20px;
+  z-index: 2;
+  text-shadow: 0 10px 60px rgba(0, 0, 0, 0.6);
+}
+.after-number {
+  position: absolute;
+  top: 820px;
+  left: 80px;
+  right: 80px;
+  text-align: center;
+  color: #FFFFFF;
+  font-size: 48px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  z-index: 2;
+}
+.divider {
+  position: absolute;
+  top: 940px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 400px;
+  height: 4px;
+  background: #E63946;
+  z-index: 2;
+}
+.footer-text {
+  position: absolute;
+  top: 1000px;
+  left: 80px;
+  right: 80px;
+  text-align: center;
+  font-style: italic;
+  font-weight: 700;
+  font-size: 64px;
+  color: #F4D35E;
+  letter-spacing: 0;
+  z-index: 2;
+  line-height: 1.1;
+}
+.bottom-bar {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 40px 60px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 2;
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 22px;
+  letter-spacing: 2px;
+  border-top: 1px solid rgba(255, 255, 255, 0.15);
+}
+.bottom-bar .handle {
+  font-weight: 500;
+}
+.bottom-bar .source {
+  font-style: italic;
+  font-size: 18px;
+  color: rgba(255, 255, 255, 0.55);
+}
+</style>
+</head>
+<body>
+<div class="image">
+  <div class="badge">CASO REAL</div>
+  <div class="top-text">A Klarna demitiu</div>
+  <div class="number">700</div>
+  <div class="after-number">humanos e trocou por IA.</div>
+  <div class="divider"></div>
+  <div class="footer-text">Em 2025, voltou atrás.</div>
+  <div class="bottom-bar">
+    <span class="handle">Apolo Santos</span>
+    <span class="source">Fontes: Fast Company, 2024 · Bloomberg, 2025</span>
+  </div>
+</div>
+</body>
+</html>

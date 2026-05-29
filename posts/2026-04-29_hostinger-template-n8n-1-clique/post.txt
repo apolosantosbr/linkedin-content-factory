@@ -1,0 +1,52 @@
+# POST
+
+O n8n acabou de levar US$ 180 milhões em Series C, com valuation de US$ 2,5 bilhões (Sacra, out/2025).
+E rodar um na sua VPS virou literalmente 1 clique.
+
+US$ 2,5 BILHÕES DE VALUATION numa plataforma de automação de código aberto.
+Isso valida algo que quem já está no jogo sentiu na prática: o n8n virou a infraestrutura padrão de automação pra quem quer sair da dependência de Zapier e Make.
+
+Mas tinha um problema na hora de subir.
+
+Instalar n8n próprio não era trivial.
+Era Docker, terminal, porta 5678, proxy reverso, SSL manual, arquivo .env sumindo no meio do caminho.
+Umas 2 a 3 horas até ver o editor abrir. Muita gente desistia na metade e voltava correndo pro Zapier.
+
+Isso acabou.
+
+A Hostinger lançou template de 1 clique direto na VPS.
+2 MINUTOS PRA SUBIR O N8N, editor aberto, primeiro workflow rodando.
+
+SEM DOCKER, SEM TERMINAL, SEM SSL MANUAL.
+
+E isso destrava muita coisa na prática.
+
+Nas últimas semanas eu rodei na minha stack: scraping de lead com GPT, CRM integrando WhatsApp pro atendimento, pipeline de conteúdo puxando dados de analytics, agente de SDR qualificando lead antes do time humano tocar.
+
+Cada um desses workflows custaria de 300 a 800 reais por mês em SaaS separado.
+Rodando na VPS, fica tudo dentro de um plano de 20 dólares.
+
+A BARREIRA DE INFRA CAIU.
+
+Antes o diferencial era saber configurar servidor.
+AGORA VALE QUEM EXECUTA melhor: quem monta workflow que resolve problema real, quem entende onde IA encaixa no processo, quem valida rápido com cliente.
+
+O resto virou template.
+
+Se você quer testar isso ainda hoje, deixei o link da VPS que uso no primeiro comentário.
+
+# HASHTAGS
+
+#n8n #automacao #noCode #IA #hostinger
+
+# 1o COMENTARIO (CTA)
+
+O template de 1 clique do n8n roda na VPS da Hostinger. Como parceiro oficial, consegui 60% OFF no plano anual pra quem quer testar.
+
+Link direto: https://www.hostinger.com/automatik
+
+Sobe em 2 minutos, editor aberto, primeiro workflow rodando sem dor de cabeça. Se travar em qualquer passo do setup, pergunta aqui que eu ajudo.
+
+# HORARIO
+
+Quarta, 29/04/2026, 10h00 (BRT)

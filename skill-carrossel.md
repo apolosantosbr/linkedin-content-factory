@@ -1,7 +1,18 @@
-# SKILL: LINKEDIN CARROSSEL — Manual de Treinamento
+# SKILL: CARROSSEL — Manual de Treinamento
 
-> **Missao:** Criar carrosseis de LinkedIn com 7 slides em HTML (1080x1350), otimizados para engajamento maximo.
-> **Output:** Arquivo HTML com 7 slides prontos para screenshot/conversao em PDF para upload.
+> **Missao:** Criar carrosseis com 7 slides em HTML (1080x1350), otimizados para engajamento maximo.
+> **Plataforma padrao:** LinkedIn. **Modo alternativo:** Instagram (ativado por solicitacao explicita).
+> **Output:** Arquivo HTML com 7 slides prontos para screenshot/conversao em PDF (LinkedIn) ou PNG individual (Instagram).
+
+---
+
+## MODO DE PLATAFORMA
+
+**LinkedIn (padrao):** Ativo por default. Siga todas as regras deste manual sem ajustes.
+
+**Instagram (opt-in):** Ativado apenas quando o usuario pedir explicitamente ("carrossel pro Instagram", "--platform instagram", "versao IG", etc). Aplique os overrides descritos na **SECAO 10 — MODO INSTAGRAM** ao final deste manual.
+
+Nunca gere carrossel Instagram sem pedido explicito. Quando em duvida, pergunte.
 
 ---
 
@@ -408,7 +419,108 @@ p  { font-size: 32px; font-weight: 400; line-height: 1.4; }
 
 ---
 
-## 9. BLOCO DE NOTAS — TEMPLATE
+## 9. MODO INSTAGRAM (opt-in)
+
+> **Ativacao:** Apenas quando o usuario pedir explicitamente. Caso contrario, ignore esta secao.
+
+O conteudo do artigo e o mesmo. O que muda e o invólucro: copy do CTA, legenda, overlays de UI e regras da plataforma. Formato visual (1080x1350, 4:5) e paleta continuam identicos — simplifica a producao.
+
+### 9.1 Diferencas vs. LinkedIn
+
+| Item | LinkedIn (padrao) | Instagram (opt-in) |
+|---|---|---|
+| Tamanho | 1080x1350 (4:5) | **1080x1350 (4:5)** — mesmo |
+| Max slides | 7 recomendado | 7 ok (ate 10 permitido) |
+| Slide 1 — "Arraste para o lado →" | Sim | **Remover** — usuario IG ja sabe deslizar |
+| Nome "Apolo Santos" na capa | Sim | **Trocar por @jogodagestao** (IG e handle-first) |
+| CTA principal | "Seguir para mais", "Comenta abaixo" | **"Salva pra depois"**, "Compartilha nos stories" |
+| Handle no slide 7 | @apolosantos | **@jogodagestao** |
+| Safe zone top/bottom | 60px | **120px** (IG sobrepoe UI de like/comment no preview) |
+| Hashtags | Nenhuma ou 1-3 | **3-5 estrategicas** — incluir no artigo de legenda, nao no slide |
+| Fonte "Apolo Santos" | Visivel | Nao usar — so @apolosantos |
+| Dados/fontes | Citar no slide (regra do projeto) | **Citar no slide igual** (regra do projeto mantem) |
+
+### 9.2 Overrides no template HTML
+
+Quando em modo Instagram, aplicar estes ajustes no template base da **SECAO 5**:
+
+```css
+/* Aumentar safe zone para evitar overlap com UI do IG */
+.slide { padding: 120px 60px; }
+```
+
+```html
+<!-- SLIDE 1 — CAPA (Instagram) -->
+<div class="slide slide-cover">
+  <div class="badge">IA & MARKETING</div>
+  <h1>[TITULO PROVOCATIVO DO CARROSSEL]</h1>
+  <p class="subtitle">[Subtitulo — 1 linha de contexto]</p>
+  <p class="author">@apolosantos</p>
+  <!-- REMOVER: <p class="swipe">Arraste para o lado →</p> -->
+</div>
+
+<!-- SLIDE 7 — CTA (Instagram) -->
+<div class="slide slide-cta">
+  <h2>[Resumo em 1 frase impactante]</h2>
+  <p class="cta-text">Salva pra quando precisar.</p>
+  <div class="follow">@apolosantos</div>
+</div>
+```
+
+### 9.3 CTA por tipo de carrossel (Instagram)
+
+| Tipo | CTA LinkedIn | CTA Instagram |
+|---|---|---|
+| Framework / Passo a passo | "Segue para mais frameworks" | **"Salva pra consultar depois"** |
+| Lista curada | "Qual voce ja usou? Comenta" | **"Marca alguem que precisa ver isso"** |
+| Mito vs. Realidade | "Concorda? Comenta" | **"Compartilha nos stories pra educar a galera"** |
+| Antes/Depois | "Ja passou por isso?" | **"Salva e tenta aplicar essa semana"** |
+
+### 9.4 Legenda para o post (Instagram)
+
+Quando em modo IG, **tambem entregue a legenda pronta** para colar no Instagram (diferente do LinkedIn onde o artigo inteiro vai no post):
+
+```markdown
+[Hook de 1 linha — mesma energia do slide 1]
+
+[2-4 linhas expandindo o tema do carrossel]
+
+[1 pergunta pro comentario]
+
+Salva pra depois. Compartilha com quem precisa ver.
+
+—
+#IA #MarketingDigital #Produtividade [+1-2 hashtags do nicho do post]
+```
+
+Regras da legenda IG:
+- Maximo 5 hashtags (IG 2026 penaliza spam de hashtag)
+- Primeira linha e o hook — aparece no feed antes do "... mais"
+- Nao repetir o texto do slide 1 exatamente
+- CTA de salvar + compartilhar (sinais mais fortes no algoritmo 2026)
+
+### 9.5 Checklist Instagram (adicional ao da Secao 8)
+
+- [ ] Slide 1 SEM "Arraste para o lado →"?
+- [ ] Slide 1 com @apolosantos (nao "Apolo Santos")?
+- [ ] Safe zone de 120px top/bottom aplicada?
+- [ ] CTA do slide 7 adaptado para IG ("Salva", "Compartilha", "Marca")?
+- [ ] Legenda pronta entregue junto com os slides?
+- [ ] Hashtags (3-5) selecionadas para o nicho do post?
+- [ ] Dados/fontes citados igual LinkedIn (regra do projeto)?
+
+### 9.6 Output do modo Instagram
+
+Quando em modo IG, entregar **dois artefatos**:
+
+1. `carrossel-instagram.html` — HTML com os 7 slides ja ajustados
+2. `legenda-instagram.md` — Legenda pronta para colar no post
+
+Salvar ambos na pasta do post (`posts/AAAA-MM-DD_titulo/`).
+
+---
+
+## 10. BLOCO DE NOTAS — TEMPLATE
 
 ```markdown
 # BLOCO DE NOTAS — CARROSSEIS

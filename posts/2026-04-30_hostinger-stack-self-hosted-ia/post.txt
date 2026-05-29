@@ -1,0 +1,55 @@
+# POST
+
+Eu estava torrando US$ 500 por mês em OpenAI mais Zapier.
+Troquei por uma stack self hosted de US$ 20 que processa 200 mil workflows por mês (Apify, 2026).
+
+US$ 500 POR MÊS JOGADOS FORA em cobranças invisíveis.
+OpenAI por token, Zapier por task, integração X por usuário, ferramenta Y por seat. Cada uma cobra "pouco". Somado no fim do mês, virou salário de estagiário indo direto pra conta de gringo.
+
+Decidi mudar a arquitetura inteira.
+
+Hoje eu rodo assim:
+VPS na Hostinger segurando a infraestrutura.
+Ollama processando os LLMs localmente, sem pagar token.
+n8n orquestrando os workflows 24 horas por dia.
+Tudo dentro de uma máquina que custa menos que um combo de fast food.
+
+US$ 20 POR MÊS RODANDO TUDO.
+
+O dado que fechou a decisão veio da Apify (2026): uma stack equivalente processa 200 MIL WORKFLOWS POR MÊS e gera economia de mais de US$ 3.600 por ano comparado a cloud tradicional.
+
+Mas o que ninguém fala é o bônus que vem junto de graça.
+
+Cliente te manda CNPJ, base de contato, histórico de atendimento, dado sensível de operação.
+
+Em stack cloud, isso vaza pra OpenAI, Zapier e mais 3 ou 4 provedores. Cada um com seu termo de uso, sua política de treinamento, sua jurisdição.
+
+Em VPS sua, fica sua.
+
+SEUS DADOS NA SUA VPS.
+
+ISSO NÃO É ECONOMIA, É SOBERANIA.
+
+Você para de depender de 5 empresas pra rodar 1 operação.
+Você decide o modelo que usa, a versão, o volume, quando escala.
+Você não é mais refém de mudança de preço do provedor nem de bloqueio de conta sem aviso.
+
+Essa é a diferença entre operar IA e ser operado por ela.
+
+Se você quer montar a sua hoje, deixei o link da VPS que uso no primeiro comentário.
+
+# HASHTAGS
+
+#selfhosted #IA #n8n #ollama #hostinger
+
+# 1o COMENTARIO (CTA)
+
+A VPS que sustenta essa stack inteira (Ollama + n8n + o que mais você quiser) está com 60% OFF no plano anual como parceiro oficial da Hostinger.
+
+Link direto: https://www.hostinger.com/automatik
+
+A mesma máquina que processa 200 mil workflows por mês custa menos que uma conta do Spotify. Dúvida de setup ou qual plano escolher, pergunta aqui nos comentários.
+
+# HORARIO
+
+Quinta, 30/04/2026, 10h00 (BRT)

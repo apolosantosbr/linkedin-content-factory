@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<title>SEO → GEO — Minimalist Tech Data</title>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap');
+* { margin: 0; padding: 0; box-sizing: border-box; }
+@page { size: 1080px 1350px; margin: 0; }
+html, body { margin: 0; padding: 0; background: #FAFAFA; width: 1080px; height: 1350px; }
+.image {
+  width: 1080px;
+  height: 1350px;
+  position: relative;
+  overflow: hidden;
+  font-family: 'Inter', -apple-system, sans-serif;
+  background: #FAFAFA;
+  background-image:
+    linear-gradient(rgba(0,0,0,0.04) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(0,0,0,0.04) 1px, transparent 1px);
+  background-size: 48px 48px;
+}
+.badge {
+  position: absolute;
+  top: 60px;
+  left: 60px;
+  background: #0A0A0A;
+  color: #FFFFFF;
+  font-size: 20px;
+  font-weight: 800;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  padding: 12px 22px;
+  z-index: 3;
+}
+.search-bar {
+  position: absolute;
+  top: 200px;
+  left: 90px;
+  right: 90px;
+  height: 96px;
+  background: #FFFFFF;
+  border-radius: 48px;
+  box-shadow: 0 4px 30px rgba(0,0,0,0.08);
+  display: flex;
+  align-items: center;
+  padding: 0 36px;
+  z-index: 2;
+}
+.search-bar .google-dot {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background: conic-gradient(from 0deg, #4285F4, #EA4335, #FBBC05, #34A853, #4285F4);
+  margin-right: 22px;
+  flex-shrink: 0;
+}
+.search-bar .query {
+  color: #333;
+  font-size: 30px;
+  font-weight: 500;
+  flex-grow: 1;
+}
+.search-bar .icon {
+  font-size: 28px;
+  color: #999;
+  margin-left: 20px;
+}
+.x-mark {
+  position: absolute;
+  top: 200px;
+  left: 90px;
+  right: 90px;
+  height: 96px;
+  pointer-events: none;
+  z-index: 3;
+}
+.x-mark::before,
+.x-mark::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 0;
+  right: 0;
+  height: 10px;
+  background: #E63946;
+  box-shadow: 0 2px 10px rgba(230, 57, 70, 0.4);
+}
+.x-mark::before {
+  transform: rotate(6deg);
+  transform-origin: center;
+}
+.x-mark::after {
+  transform: rotate(-6deg);
+  transform-origin: center;
+}
+.number {
+  position: absolute;
+  top: 420px;
+  left: 80px;
+  right: 80px;
+  text-align: center;
+  font-family: 'Archivo Black', sans-serif;
+  font-size: 380px;
+  font-weight: 900;
+  color: #0A0A0A;
+  line-height: 0.85;
+  letter-spacing: -12px;
+  z-index: 2;
+}
+.label-above-number {
+  position: absolute;
+  top: 380px;
+  left: 90px;
+  right: 90px;
+  text-align: center;
+  color: #666;
+  font-size: 28px;
+  font-weight: 600;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  z-index: 2;
+}
+.text-below {
+  position: absolute;
+  top: 860px;
+  left: 80px;
+  right: 80px;
+  text-align: center;
+  font-size: 40px;
+  font-weight: 500;
+  color: #0A0A0A;
+  line-height: 1.15;
+  z-index: 2;
+}
+.text-below strong {
+  display: block;
+  margin-top: 10px;
+  font-family: 'Archivo Black', sans-serif;
+  font-size: 54px;
+  color: #E63946;
+  letter-spacing: -1px;
+}
+.context-line {
+  position: absolute;
+  top: 1080px;
+  left: 100px;
+  right: 100px;
+  text-align: center;
+  font-size: 24px;
+  font-weight: 500;
+  color: #444;
+  line-height: 1.4;
+  z-index: 2;
+}
+.bottom-bar {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 40px 60px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 2;
+  color: #666;
+  font-size: 22px;
+  letter-spacing: 2px;
+  border-top: 2px solid #0A0A0A;
+}
+.bottom-bar .handle {
+  font-weight: 700;
+  color: #0A0A0A;
+}
+.bottom-bar .source {
+  font-style: italic;
+  font-size: 18px;
+  color: #888;
+}
+</style>
+</head>
+<body>
+<div class="image">
+  <div class="badge">MARKETING 2026</div>
+  <div class="search-bar">
+    <div class="google-dot"></div>
+    <div class="query">como fazer SEO em 2026</div>
+    <div class="icon">⌕</div>
+  </div>
+  <div class="x-mark"></div>
+  <div class="label-above-number">O impacto real</div>
+  <div class="number">34%</div>
+  <div class="text-below">
+    dos cliques orgânicos
+    <strong>desapareceram.</strong>
+  </div>
+  <div class="context-line">AI Overviews reduziram o tráfego de páginas com resposta gerada logo acima.</div>
+  <div class="bottom-bar">
+    <span class="handle">Apolo Santos</span>
+    <span class="source">Fonte: Ahrefs, 2025</span>
+  </div>
+</div>
+</body>
+</html>

@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<title>Magalu vende dentro do WhatsApp</title>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap');
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+.image {
+  width: 1080px;
+  height: 1350px;
+  background: linear-gradient(180deg, #064E47 0%, #0B6F62 50%, #054943 100%);
+  position: relative;
+  overflow: hidden;
+  font-family: 'Inter', -apple-system, system-ui, sans-serif;
+  color: #FFFFFF;
+}
+
+/* doodle de WhatsApp pattern sutil */
+.image::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background-image:
+    radial-gradient(circle at 20% 30%, rgba(255,255,255,0.05) 0%, transparent 6%),
+    radial-gradient(circle at 80% 70%, rgba(255,255,255,0.04) 0%, transparent 8%),
+    radial-gradient(circle at 50% 50%, rgba(255,255,255,0.03) 0%, transparent 10%);
+  background-size: 200px 200px, 240px 240px, 300px 300px;
+  pointer-events: none;
+}
+
+.top {
+  padding: 56px 64px 0;
+  position: relative;
+  z-index: 2;
+}
+
+.kicker {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-size: 14px;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  color: #BDFBE0;
+  font-weight: 700;
+  margin-bottom: 14px;
+}
+
+.kicker .dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: #25D366;
+  box-shadow: 0 0 16px #25D366;
+}
+
+.headline {
+  font-size: 64px;
+  font-weight: 900;
+  line-height: 1.0;
+  letter-spacing: -2px;
+}
+
+.headline .dentro {
+  background: linear-gradient(135deg, #FFD400 0%, #FFAA00 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* Mockup de conversa */
+.chat {
+  margin: 36px 64px 0;
+  background: rgba(7, 39, 36, 0.55);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 22px;
+  padding: 24px 22px 26px;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  position: relative;
+  z-index: 2;
+  backdrop-filter: blur(6px);
+}
+
+.chat-header {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding-bottom: 14px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+  margin-bottom: 4px;
+}
+
+.avatar {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #FFD400, #FF8A00);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 900;
+  color: #0B2A2A;
+  font-size: 20px;
+}
+
+.who {
+  display: flex;
+  flex-direction: column;
+}
+
+.who .name {
+  font-size: 18px;
+  font-weight: 700;
+  color: #FFFFFF;
+}
+
+.who .status {
+  font-size: 13px;
+  color: #93E5C8;
+}
+
+.bubble {
+  max-width: 78%;
+  padding: 14px 18px;
+  font-size: 22px;
+  line-height: 1.3;
+  border-radius: 18px;
+  position: relative;
+}
+
+.bubble.in {
+  align-self: flex-start;
+  background: #1F3D3A;
+  color: #ECFFF7;
+  border-bottom-left-radius: 4px;
+}
+
+.bubble.out {
+  align-self: flex-end;
+  background: #25D366;
+  color: #0A2A18;
+  border-bottom-right-radius: 4px;
+  font-weight: 600;
+}
+
+.bubble small {
+  display: block;
+  font-size: 12px;
+  opacity: 0.7;
+  margin-top: 4px;
+  font-weight: 500;
+}
+
+.product {
+  align-self: flex-end;
+  width: 78%;
+  background: #25D366;
+  border-radius: 18px;
+  border-bottom-right-radius: 4px;
+  padding: 14px;
+  color: #0A2A18;
+  display: flex;
+  gap: 12px;
+  align-items: center;
+}
+
+.product .img {
+  width: 70px;
+  height: 70px;
+  background: linear-gradient(135deg, #FFD400, #FF7A00);
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 28px;
+  font-weight: 900;
+  color: #6B0F0F;
+}
+
+.product .info {
+  flex: 1;
+}
+
+.product .info .title {
+  font-size: 17px;
+  font-weight: 700;
+  line-height: 1.1;
+  margin-bottom: 4px;
+}
+
+.product .info .price {
+  font-size: 22px;
+  font-weight: 900;
+}
+
+.pay-btn {
+  align-self: flex-end;
+  background: #FFD400;
+  color: #0A2A18;
+  font-weight: 900;
+  font-size: 18px;
+  padding: 14px 24px;
+  border-radius: 14px;
+  letter-spacing: 0.5px;
+  box-shadow: 0 8px 22px rgba(255, 212, 0, 0.35);
+}
+
+.confirmed {
+  align-self: flex-start;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background: rgba(37, 211, 102, 0.18);
+  border: 1px solid rgba(37, 211, 102, 0.4);
+  padding: 12px 16px;
+  border-radius: 14px;
+  font-size: 16px;
+  color: #BDFBE0;
+  font-weight: 600;
+}
+
+.confirmed .check {
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  background: #25D366;
+  color: #0A2A18;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 900;
+  font-size: 14px;
+}
+
+/* Bottom bar com dado */
+.stats {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 36px 64px 44px;
+  background: linear-gradient(180deg, transparent 0%, rgba(0,0,0,0.45) 70%);
+  z-index: 3;
+}
+
+.big-stat {
+  display: flex;
+  align-items: baseline;
+  gap: 16px;
+  margin-bottom: 12px;
+}
+
+.big-stat .num {
+  font-size: 96px;
+  font-weight: 900;
+  line-height: 0.95;
+  letter-spacing: -3px;
+  background: linear-gradient(135deg, #FFD400 0%, #FFAA00 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.big-stat .label {
+  font-size: 24px;
+  font-weight: 700;
+  color: #FFFFFF;
+  line-height: 1.1;
+}
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 14px;
+  border-top: 1px solid rgba(255, 255, 255, 0.12);
+  margin-top: 6px;
+}
+
+.author {
+  font-size: 13px;
+  letter-spacing: 4px;
+  color: #BDFBE0;
+  font-weight: 800;
+}
+
+.source {
+  font-size: 12px;
+  color: #93E5C8;
+  font-style: italic;
+  letter-spacing: 0.5px;
+}
+</style>
+</head>
+<body>
+<div class="image">
+
+  <div class="top">
+    <div class="kicker"><span class="dot"></span>VAREJO BRASILEIRO 2026</div>
+    <div class="headline">Magalu vende <span class="dentro">DENTRO</span><br>do WhatsApp da Lu.</div>
+  </div>
+
+  <div class="chat">
+    <div class="chat-header">
+      <div class="avatar">Lu</div>
+      <div class="who">
+        <div class="name">Lu Magalu</div>
+        <div class="status">online agora</div>
+      </div>
+    </div>
+
+    <div class="bubble in">Oi! Tem ar fritadeira 5L? <small>10:42</small></div>
+    <div class="bubble out">Tem sim! Achei 3 modelos. Esse é o mais vendido essa semana <small>10:42</small></div>
+    <div class="product">
+      <div class="img">AF</div>
+      <div class="info">
+        <div class="title">Air Fryer 5L Inox</div>
+        <div class="price">R$ 389,00</div>
+      </div>
+    </div>
+    <div class="bubble in">Quero esse. Como pago? <small>10:43</small></div>
+    <div class="pay-btn">Pagar agora · Pix</div>
+    <div class="confirmed"><span class="check">✓</span>Compra confirmada. Chega quinta.</div>
+  </div>
+
+  <div class="stats">
+    <div class="big-stat">
+      <div class="num">1 milhão</div>
+      <div class="label">de clientes já compram<br>na conversa.</div>
+    </div>
+
+    <div class="footer">
+      <div class="author">APOLO SANTOS</div>
+      <div class="source">Fonte: Exame, 2026</div>
+    </div>
+  </div>
+
+</div>
+</body>
+</html>

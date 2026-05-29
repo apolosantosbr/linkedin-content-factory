@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<title>Onde a industria usa IA — IBGE 2024</title>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&display=swap');
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+.image {
+  width: 1080px;
+  height: 1350px;
+  background: #F0E9D8;
+  background-image:
+    radial-gradient(at 85% 15%, rgba(200, 57, 47, 0.04) 0%, transparent 60%);
+  position: relative;
+  overflow: hidden;
+  font-family: 'Inter', -apple-system, system-ui, sans-serif;
+  color: #0A0A0A;
+  padding: 56px 60px;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Subtle paper texture */
+.image::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background-image:
+    repeating-linear-gradient(0deg, rgba(0,0,0,0.012) 0px, rgba(0,0,0,0.012) 1px, transparent 1px, transparent 38px);
+  pointer-events: none;
+}
+
+/* Masthead */
+.masthead {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 14px;
+  border-bottom: 3px solid #0A0A0A;
+}
+
+.brand {
+  display: flex;
+  align-items: baseline;
+  gap: 14px;
+}
+
+.brand .ribbon {
+  background: #C8392F;
+  color: #FFFFFF;
+  padding: 6px 12px;
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 11px;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+.brand .label {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 12px;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  color: #4A4A4A;
+  font-weight: 700;
+}
+
+.issue {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 11px;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: #5A5A5A;
+  text-align: right;
+  line-height: 1.5;
+}
+
+/* Title */
+.title {
+  margin-top: 26px;
+  font-size: 46px;
+  font-weight: 900;
+  line-height: 1.04;
+  letter-spacing: -1.5px;
+  color: #0A0A0A;
+  text-transform: uppercase;
+  max-width: 940px;
+}
+
+.subtitle {
+  margin-top: 12px;
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 13px;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: #5A5A5A;
+  font-weight: 500;
+}
+
+/* Chart */
+.chart {
+  margin-top: 36px;
+  display: flex;
+  flex-direction: column;
+  gap: 22px;
+  flex: 1;
+  justify-content: center;
+}
+
+.bar-row {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.bar-meta {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+}
+
+.bar-label {
+  font-size: 17px;
+  font-weight: 800;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: #0A0A0A;
+}
+
+.bar-pct {
+  font-family: 'Playfair Display', serif;
+  font-weight: 900;
+  font-size: 56px;
+  line-height: 1;
+  letter-spacing: -2px;
+}
+
+.bar-track {
+  width: 100%;
+  height: 38px;
+  background: rgba(10, 10, 10, 0.06);
+  position: relative;
+  border-radius: 2px;
+}
+
+.bar-fill {
+  height: 100%;
+  position: relative;
+  border-radius: 2px;
+}
+
+/* Bar 1 — Administrativo (destaque vermelho-laranja) */
+.bar-row.b1 .bar-pct { color: #C8392F; }
+.bar-row.b1 .bar-fill {
+  width: 87.9%;
+  background: linear-gradient(90deg, #C8392F 0%, #D8702E 100%);
+}
+
+/* Bar 2 — Comercializacao (navy/grafite) */
+.bar-row.b2 .bar-pct { color: #1F2D3D; }
+.bar-row.b2 .bar-fill {
+  width: 75.2%;
+  background: linear-gradient(90deg, #1F2D3D 0%, #2A3E55 100%);
+}
+
+/* Bar 3 — Desenvolvimento (cinza-grafite suave) */
+.bar-row.b3 .bar-pct { color: #4A4A4A; }
+.bar-row.b3 .bar-fill {
+  width: 73.1%;
+  background: linear-gradient(90deg, #4A4A4A 0%, #6A6A6A 100%);
+}
+
+/* Bar 4 — Producao (cinza desbotado pequeno) */
+.bar-row.b4 .bar-label { color: #8A8A8A; }
+.bar-row.b4 .bar-pct { color: #8A8A8A; font-size: 36px; }
+.bar-row.b4 .bar-fill {
+  width: 12%;
+  background: #B8B8B8;
+}
+
+.bar-row.b4 .bar-note {
+  font-style: italic;
+  font-size: 13px;
+  color: #8A8A8A;
+  letter-spacing: 0.2px;
+  margin-top: 4px;
+}
+
+/* Punchline */
+.punchline {
+  margin-top: 28px;
+  padding: 20px 0 0;
+  border-top: 2px solid #0A0A0A;
+  font-size: 30px;
+  font-weight: 700;
+  font-style: italic;
+  line-height: 1.18;
+  letter-spacing: -0.5px;
+  color: #0A0A0A;
+  max-width: 920px;
+}
+
+.punchline .red {
+  color: #C8392F;
+  font-style: normal;
+  font-weight: 900;
+  text-transform: uppercase;
+}
+
+/* Footer */
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 18px;
+  margin-top: 22px;
+  border-top: 1px solid rgba(10, 10, 10, 0.25);
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 11px;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: #5A5A5A;
+}
+
+.footer .author {
+  color: #0A0A0A;
+  font-weight: 800;
+  letter-spacing: 4px;
+}
+</style>
+</head>
+<body>
+<div class="image">
+
+  <div class="masthead">
+    <div class="brand">
+      <div class="ribbon">DADO IBGE</div>
+      <div class="label">PINTEC Semestral · 2024</div>
+    </div>
+    <div class="issue">Maio 2026<br>Linkedin · Apolo Santos</div>
+  </div>
+
+  <div class="title">Onde a indústria usa IA no Brasil</div>
+  <div class="subtitle">% das indústrias com IA por área de aplicação</div>
+
+  <div class="chart">
+
+    <div class="bar-row b1">
+      <div class="bar-meta">
+        <div class="bar-label">ADMINISTRATIVO</div>
+        <div class="bar-pct">87,9%</div>
+      </div>
+      <div class="bar-track"><div class="bar-fill"></div></div>
+    </div>
+
+    <div class="bar-row b2">
+      <div class="bar-meta">
+        <div class="bar-label">COMERCIALIZAÇÃO</div>
+        <div class="bar-pct">75,2%</div>
+      </div>
+      <div class="bar-track"><div class="bar-fill"></div></div>
+    </div>
+
+    <div class="bar-row b3">
+      <div class="bar-meta">
+        <div class="bar-label">DESENVOLVIMENTO DE PRODUTO</div>
+        <div class="bar-pct">73,1%</div>
+      </div>
+      <div class="bar-track"><div class="bar-fill"></div></div>
+    </div>
+
+    <div class="bar-row b4">
+      <div class="bar-meta">
+        <div class="bar-label">PRODUÇÃO</div>
+        <div class="bar-pct">menor</div>
+      </div>
+      <div class="bar-track"><div class="bar-fill"></div></div>
+      <div class="bar-note">o que você achou que liderava</div>
+    </div>
+
+  </div>
+
+  <div class="punchline">a IA não está na <span class="red">FÁBRICA</span>. Está no <span class="red">ESCRITÓRIO</span>.</div>
+
+  <div class="footer">
+    <span class="author">APOLO SANTOS</span>
+    <span>Fonte · IBGE 2025 · PINTEC</span>
+  </div>
+
+</div>
+</body>
+</html>

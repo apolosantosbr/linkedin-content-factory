@@ -1,0 +1,69 @@
+============================================================
+AGENDAR: SEXTA 08/05/2026 - 09h00 BRT
+DIMENSAO IMAGEM: 1080x1350 (4:5 portrait)
+============================================================
+
+A indústria saiu de 16,9% pra 41,9% de adoção de IA em 2 anos. Mas o número contraintuitivo é outro: a área de maior uso de IA na indústria é o ADMINISTRATIVO, com 87,9%. Não a produção.
+
+A pesquisa PINTEC Semestral 2024 do IBGE (publicada em set/2025) mediu onde a IA está dentro das indústrias brasileiras (IBGE, 2025). O ranking surpreende e quebra o estereótipo de "indústria 4.0":
+
+Administrativo, 87,9%.
+Comercialização, 75,2%.
+Desenvolvimento de produto, 73,1%.
+Produção, no final da lista.
+
+Eu observo a leitura assim. A fábrica não automatizou a fábrica. A fábrica automatizou o ESCRITÓRIO. O gargalo não é mais o chão de produção. É a venda, o backoffice, a integração com o cliente, a documentação que precisa rodar entre comprador, fiscal e logística. Modernizar indústria em 2026 não é robô soldando carro. É IA respondendo email do comprador, gerando contrato, despachando relatório, conciliando pedido.
+
+Faz sentido. O chão de fábrica já passou por décadas de Lean, Six Sigma, automação mecânica. O escritório, não. O escritório ainda é onde mora a planilha de 12 anos, a pasta com 400 PDFs e o email que ninguém respondeu desde quarta.
+
+Tenho visto esse mesmo padrão se repetir em qualquer negócio tradicional, fora da indústria também. O dinheiro novo da IA não está no núcleo operacional. Está no ENTORNO. Logística documental, atendimento, comercial, financeiro, RH, fiscal, jurídico de contrato. Quem está esperando a IA "transformar a operação" está olhando pro lugar errado. O retorno mais rápido vem do escritório, não da linha. E quando vem do escritório, vem rápido: semanas, não trimestres.
+
+A IA não chegou pra mexer no que faz a empresa funcionar. Chegou pra liberar o que faz a empresa CRESCER.
+
+Em qual área da sua empresa a IA poderia entregar resultado AINDA ESSA SEMANA?
+
+#Industria #InteligenciaArtificial #IBGE #TransformacaoDigital #BackOffice #GestaoEstrategica #IA
+
+============================================================
+PROMPT PRA GERAR THUMBNAIL EM IA (ChatGPT/Gemini/DALL-E)
+============================================================
+
+## Prompt principal (bar chart editorial estilo revista de negocios)
+
+Editorial business-magazine page, vertical 4:5 portrait. Off-white beige paper background (#F0E9D8) with very faint horizontal rule lines like a printed report. Top masthead: a vivid red-vermilion ribbon label "DADO IBGE" in monospace caps next to a smaller monospace label "PINTEC Semestral · 2024". Right of masthead: tiny issue date "Maio 2026 · Linkedin · Apolo Santos". Thick black rule below. Title in massive bold caps sans serif (Inter weight 900) "ONDE A INDÚSTRIA USA IA NO BRASIL". Tiny monospace subtitle "% das indústrias com IA por área de aplicação". Center: horizontal bar chart with 4 ranked rows. Row 1 dominant: caps label "ADMINISTRATIVO", massive serif percentage "87,9%" in editorial red-orange (Playfair Display weight 900), full-width bar with red-to-orange gradient (#C8392F to #D8702E). Row 2: "COMERCIALIZAÇÃO" with "75,2%" in navy (#1F2D3D), navy gradient bar 75% width. Row 3: "DESENVOLVIMENTO DE PRODUTO" with "73,1%" in graphite gray, gray bar 73% width. Row 4 (collapsed): muted gray "PRODUÇÃO" with text "menor" instead of percentage, tiny faded gray bar at ~12% width, italic small caption "o que você achou que liderava". Bottom: thick black rule then italic punchline "a IA não está na FÁBRICA. Está no ESCRITÓRIO." with FÁBRICA and ESCRITÓRIO highlighted in red bold caps. Footer: "APOLO SANTOS" left, "Fonte · IBGE 2025 · PINTEC" right. Aesthetic: smart, sophisticated, business journal data spread. 1080x1350.
+
+## Variantes
+
+### Variante 2 — Newspaper data spread
+Newspaper-style data spread on aged newsprint background. Tighter typography, smaller bars, three-column footer. Mood like Folha de S. Paulo Mercado section or Valor Econômico front-page chart. Same hierarchy with PRODUÇÃO collapsed at the bottom. 1080x1350.
+
+### Variante 3 — Modern data poster minimal
+Modernist data poster. Pure off-white, no header chrome. Just the four bars stacked, percentages in DM Serif Display. PRODUÇÃO bar nearly absent, drawing attention by absence. Bottom in monumental italic serif "ESCRITÓRIO." as the only punctuation. Almost like an MIT Visual Communication piece. 1080x1350.
+
+## Negative prompt
+
+3D charts, pie charts, gradient excessive rainbow, neon, fake stock photo people, blurry text, lorem ipsum, cluttered legend, missing portuguese accents, hifen, em-dash, watermark, generic Excel screenshot, IBGE logo violation, busy decorative ornaments, oversaturation, infographic clipart cliche, robot factory imagery.
+
+## Specs tecnicas
+
+- Ratio: 1080 x 1350 (4:5 portrait)
+- Resolucao: 300 DPI equivalente
+- Fonte titulo: Inter peso 900 (alternativas: Söhne Breit, Neue Haas Grotesk, Manrope)
+- Fonte percentuais: Playfair Display peso 900 (alternativas: Tiempos Headline, Recoleta, DM Serif Display)
+- Fonte rotulos: Inter peso 700/800 caixa alta
+- Fonte mono: JetBrains Mono peso 500/700 (alternativas: IBM Plex Mono, Fira Code)
+- Modelos recomendados: Ideogram 2.0 (texto perfeito), Recraft V3, Midjourney v6 (`--ar 4:5 --style raw`)
+
+## Direcao de paleta
+
+| Cor | Hex | Uso |
+|-----|-----|-----|
+| Bege editorial | `#F0E9D8` | Fundo principal (papel) |
+| Preto rico | `#0A0A0A` | Tipografia hero, regras, autor |
+| Vermelho jornal | `#C8392F` | Barra ADMINISTRATIVO, ribbon, punchline destaque |
+| Laranja jornal | `#D8702E` | Gradient da barra ADMIN |
+| Navy editorial | `#1F2D3D` | Barra COMERCIALIZAÇÃO |
+| Cinza grafite | `#4A4A4A` | Barra DESENVOLVIMENTO |
+| Cinza desbotado | `#B8B8B8` | Barra PRODUÇÃO (proposital) |
+| Cinza fantasma | `#8A8A8A` | Texto PRODUÇÃO + nota italica |
+| Cinza editorial | `#5A5A5A` | Subtitulo, footer |

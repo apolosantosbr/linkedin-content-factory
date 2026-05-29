@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<title>Snap +11% — Duas Colunas</title>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@500;700&display=swap');
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { background: #111; display: flex; justify-content: center; padding: 40px; }
+.image {
+  width: 1080px;
+  height: 1350px;
+  background: #0A0A0A;
+  position: relative;
+  font-family: 'Inter', -apple-system, sans-serif;
+  overflow: hidden;
+  color: #FFFFFF;
+}
+
+/* Background: ambiente financeiro */
+.image::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background:
+    radial-gradient(circle at 0% 0%, rgba(239, 68, 68, 0.16) 0%, transparent 45%),
+    radial-gradient(circle at 100% 100%, rgba(16, 185, 129, 0.18) 0%, transparent 45%);
+  z-index: 0;
+}
+.image::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background-image:
+    linear-gradient(rgba(255,255,255,0.03) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255,255,255,0.03) 1px, transparent 1px);
+  background-size: 54px 54px;
+  z-index: 0;
+}
+
+/* HEADER */
+.header {
+  position: relative;
+  z-index: 2;
+  padding: 60px 70px 0 70px;
+  display: flex;
+  flex-direction: column;
+}
+.top-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 20px;
+  border-bottom: 1px solid rgba(255,255,255,0.12);
+}
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 3px;
+  color: #A0AEC0;
+  text-transform: uppercase;
+}
+.brand .pulse {
+  width: 8px;
+  height: 8px;
+  background: #00D4FF;
+  border-radius: 50%;
+  box-shadow: 0 0 10px #00D4FF;
+}
+.date {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 13px;
+  color: #6B7280;
+  letter-spacing: 2px;
+}
+.kicker {
+  font-size: 14px;
+  color: #EF4444;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  font-weight: 800;
+  margin: 28px 0 16px 0;
+}
+.headline {
+  font-size: 66px;
+  font-weight: 900;
+  line-height: 0.98;
+  letter-spacing: -2px;
+  color: #FFFFFF;
+  margin-bottom: 10px;
+}
+.headline .num {
+  color: #10B981;
+  text-shadow: 0 0 30px rgba(16,185,129,0.35);
+}
+.subhead {
+  font-size: 20px;
+  color: #9CA3AF;
+  line-height: 1.45;
+  max-width: 860px;
+  margin-top: 12px;
+  font-weight: 500;
+}
+.subhead strong { color: #E2E8F0; font-weight: 700; }
+
+/* VS LABEL */
+.vs-label {
+  position: relative;
+  z-index: 2;
+  margin: 42px 70px 20px 70px;
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 13px;
+  letter-spacing: 3px;
+  color: #6B7280;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+.vs-label .line {
+  flex: 1;
+  height: 1px;
+  background: rgba(255,255,255,0.1);
+}
+
+/* BALANCO — DUAS COLUNAS */
+.balance {
+  position: relative;
+  z-index: 2;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin: 0 70px;
+  gap: 0;
+  border: 1px solid rgba(255,255,255,0.12);
+  border-radius: 14px;
+  overflow: hidden;
+  background: rgba(0,0,0,0.35);
+  backdrop-filter: blur(4px);
+}
+
+.col {
+  padding: 36px 34px;
+  position: relative;
+}
+.col.left {
+  background: linear-gradient(180deg, rgba(239,68,68,0.08), rgba(239,68,68,0.02));
+  border-right: 1px solid rgba(255,255,255,0.12);
+}
+.col.right {
+  background: linear-gradient(180deg, rgba(16,185,129,0.1), rgba(16,185,129,0.03));
+}
+.col-tag {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 12px;
+  letter-spacing: 3px;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-bottom: 12px;
+}
+.col.left .col-tag { color: #EF4444; }
+.col.right .col-tag { color: #10B981; }
+
+.col-title {
+  font-size: 32px;
+  font-weight: 900;
+  line-height: 1.05;
+  letter-spacing: -0.5px;
+  margin-bottom: 22px;
+  color: #FFFFFF;
+}
+.col-example {
+  font-size: 14px;
+  color: #9CA3AF;
+  line-height: 1.5;
+  margin-bottom: 20px;
+  font-style: italic;
+  padding-left: 12px;
+  border-left: 2px solid rgba(255,255,255,0.18);
+}
+.col-example strong { color: #E2E8F0; font-style: normal; font-weight: 700; }
+
+.col-verdict {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding-top: 16px;
+  border-top: 1px dashed rgba(255,255,255,0.12);
+  font-size: 14px;
+  font-weight: 800;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+}
+.col.left .col-verdict { color: #EF4444; }
+.col.right .col-verdict { color: #10B981; }
+.col-verdict .arrow {
+  font-size: 18px;
+  font-weight: 900;
+}
+
+/* CTA TITULO */
+.cta {
+  position: absolute;
+  left: 70px;
+  right: 70px;
+  bottom: 140px;
+  z-index: 2;
+  font-size: 40px;
+  font-weight: 900;
+  line-height: 1.05;
+  letter-spacing: -1px;
+  color: #FFFFFF;
+}
+.cta .accent {
+  background: linear-gradient(135deg, #00D4FF, #7C3AED);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* FOOTER */
+.footer {
+  position: absolute;
+  left: 70px;
+  right: 70px;
+  bottom: 60px;
+  z-index: 2;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 20px;
+  border-top: 1px solid rgba(255,255,255,0.12);
+  font-size: 12px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+.author { color: #FFFFFF; }
+.source {
+  color: #6B7280;
+  font-style: italic;
+  text-transform: none;
+  letter-spacing: 0.5px;
+  font-weight: 500;
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 11px;
+}
+</style>
+</head>
+<body>
+<div class="image">
+
+  <div class="header">
+    <div class="top-bar">
+      <div class="brand"><span class="pulse"></span>LEITURA DE MERCADO</div>
+      <div class="date">15 · ABR · 2026</div>
+    </div>
+    <div class="kicker">SNAP · −1.000 DEMISSÕES</div>
+    <h1 class="headline">A ação subiu <span class="num">+11%.</span><br>E mudou a regra do jogo.</h1>
+    <p class="subhead">O mercado precificou <strong>layoff por IA</strong> como criação de valor. Agora todo profissional ocupa <strong>uma de duas colunas</strong> no balanço:</p>
+  </div>
+
+  <div class="vs-label">
+    <span>// VOCÊ ESTÁ EM UMA DELAS</span>
+    <div class="line"></div>
+  </div>
+
+  <div class="balance">
+    <div class="col left">
+      <div class="col-tag">COLUNA 1</div>
+      <div class="col-title">Custo substituível por IA</div>
+      <div class="col-example">"Fiz 3 decks e participei de 2 reuniões nesta semana."</div>
+      <div class="col-verdict"><span class="arrow">↓</span>Mercado recompensa cortar</div>
+    </div>
+    <div class="col right">
+      <div class="col-tag">COLUNA 2</div>
+      <div class="col-title">Alavanca que multiplica</div>
+      <div class="col-example">"Automatizei 40% do ciclo e liberei o time pra 2 iniciativas novas."</div>
+      <div class="col-verdict"><span class="arrow">↑</span>Mercado recompensa manter</div>
+    </div>
+  </div>
+
+  <div class="cta">Em qual coluna <span class="accent">você</span> está?</div>
+
+  <div class="footer">
+    <span class="author">APOLO SANTOS</span>
+    <span class="source">Fonte: SEC filing · Tom's Hardware, 2026</span>
+  </div>
+
+</div>
+</body>
+</html>

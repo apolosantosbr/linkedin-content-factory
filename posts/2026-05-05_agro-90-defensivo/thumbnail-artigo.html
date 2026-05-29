@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<title>Agro brasileiro cortou 90% do defensivo com IA</title>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+.image {
+  width: 1920px;
+  height: 1080px;
+  position: relative;
+  overflow: hidden;
+  font-family: 'Inter', -apple-system, system-ui, sans-serif;
+  color: #FFFFFF;
+}
+
+/* Sky / amanhecer */
+.sky {
+  position: absolute;
+  inset: 0;
+  background:
+    radial-gradient(ellipse at 70% 40%, rgba(255, 200, 100, 0.6) 0%, transparent 45%),
+    linear-gradient(180deg,
+      #1A1830 0%,
+      #2D1F3A 18%,
+      #6B3322 38%,
+      #C2632B 55%,
+      #E8B23A 68%,
+      #4A4A2A 80%,
+      #1F2614 100%);
+}
+
+/* Sol */
+.sun {
+  position: absolute;
+  width: 280px;
+  height: 280px;
+  top: 26%;
+  left: 62%;
+  background: radial-gradient(circle, #FFE38B 0%, rgba(232, 178, 58, 0.6) 30%, transparent 70%);
+  border-radius: 50%;
+  filter: blur(2px);
+}
+
+/* Campo - linhas de plantio em perspectiva */
+.field {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 38%;
+  background: linear-gradient(180deg, #4F5A2C 0%, #2E3A18 60%, #16200C 100%);
+  overflow: hidden;
+}
+
+.rows {
+  position: absolute;
+  inset: 0;
+  background-image:
+    repeating-linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0.18) 0px,
+      rgba(0, 0, 0, 0.18) 14px,
+      transparent 14px,
+      transparent 38px
+    );
+  transform: perspective(900px) rotateX(72deg) translateZ(0);
+  transform-origin: top center;
+  height: 220%;
+  background-size: 100% 100%;
+}
+
+/* Drone silhueta */
+.drone {
+  position: absolute;
+  top: 28%;
+  left: 70%;
+  width: 220px;
+  height: 90px;
+  z-index: 3;
+}
+
+.drone .body {
+  position: absolute;
+  top: 28px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 80px;
+  height: 32px;
+  background: #1A1A1A;
+  border-radius: 6px;
+  box-shadow: 0 0 14px rgba(0, 0, 0, 0.7);
+}
+
+.drone .arm {
+  position: absolute;
+  top: 38px;
+  width: 90px;
+  height: 4px;
+  background: #1A1A1A;
+}
+
+.drone .arm.l { left: -25px; transform: rotate(-12deg); }
+.drone .arm.r { right: -25px; transform: rotate(12deg); }
+
+.drone .prop {
+  position: absolute;
+  width: 60px;
+  height: 8px;
+  background: rgba(20, 20, 20, 0.8);
+  border-radius: 50%;
+  top: 32px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.4);
+}
+
+.drone .prop.lf { left: -32px; }
+.drone .prop.rf { right: -32px; }
+
+.drone .light {
+  position: absolute;
+  width: 8px;
+  height: 8px;
+  background: #FFD700;
+  border-radius: 50%;
+  box-shadow: 0 0 18px #FFD700;
+  bottom: 14px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.drone .beam {
+  position: absolute;
+  bottom: -18px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 0;
+  height: 0;
+  border-left: 60px solid transparent;
+  border-right: 60px solid transparent;
+  border-top: 220px solid rgba(255, 215, 100, 0.18);
+}
+
+/* Particulas/poeira */
+.dust {
+  position: absolute;
+  inset: 0;
+  background-image:
+    radial-gradient(circle at 20% 60%, rgba(255, 255, 255, 0.04) 0%, transparent 8%),
+    radial-gradient(circle at 80% 50%, rgba(255, 255, 255, 0.05) 0%, transparent 6%),
+    radial-gradient(circle at 50% 70%, rgba(255, 255, 255, 0.03) 0%, transparent 10%);
+  background-size: 400px 400px, 320px 320px, 280px 280px;
+  pointer-events: none;
+  z-index: 2;
+}
+
+/* Overlay escuro inferior pra legibilidade */
+.dark-overlay {
+  position: absolute;
+  inset: 0;
+  background:
+    linear-gradient(180deg, transparent 50%, rgba(10, 14, 8, 0.85) 100%),
+    linear-gradient(90deg, rgba(10, 14, 8, 0.6) 0%, transparent 35%);
+  z-index: 4;
+}
+
+/* Conteudo */
+.content {
+  position: absolute;
+  inset: 0;
+  z-index: 5;
+  padding: 60px 80px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  color: #FFFFFF;
+}
+
+.top {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.kicker {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  padding: 10px 20px;
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(232, 178, 58, 0.5);
+  backdrop-filter: blur(10px);
+  border-radius: 999px;
+  font-size: 14px;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  font-weight: 800;
+  color: #E8B23A;
+}
+
+.kicker .dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: #5BA84A;
+  box-shadow: 0 0 12px #5BA84A;
+}
+
+.label-right {
+  font-size: 12px;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.65);
+  font-weight: 700;
+  text-align: right;
+  line-height: 1.5;
+}
+
+.center {
+  max-width: 1200px;
+}
+
+.hook-line {
+  font-size: 28px;
+  font-weight: 700;
+  color: #E8B23A;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+
+.headline {
+  font-family: 'Bebas Neue', 'Inter', sans-serif;
+  font-size: 138px;
+  font-weight: 900;
+  line-height: 0.93;
+  letter-spacing: -1px;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  text-shadow: 0 6px 30px rgba(0, 0, 0, 0.6);
+}
+
+.headline .num {
+  color: #E8B23A;
+  position: relative;
+  display: inline-block;
+}
+
+.headline .num::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: -8px;
+  height: 8px;
+  background: #5BA84A;
+}
+
+.subline {
+  font-size: 30px;
+  font-weight: 600;
+  color: rgba(255, 255, 255, 0.85);
+  margin-top: 22px;
+  max-width: 1100px;
+  line-height: 1.25;
+}
+
+.bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+.author {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.author .name {
+  font-size: 18px;
+  letter-spacing: 6px;
+  font-weight: 800;
+  color: #E8B23A;
+}
+
+.author .role {
+  font-size: 13px;
+  letter-spacing: 2px;
+  color: rgba(255, 255, 255, 0.55);
+  text-transform: uppercase;
+}
+
+.source {
+  font-size: 14px;
+  font-style: italic;
+  color: rgba(255, 255, 255, 0.6);
+  letter-spacing: 0.5px;
+  text-align: right;
+  line-height: 1.5;
+}
+</style>
+</head>
+<body>
+<div class="image">
+
+  <div class="sky"></div>
+  <div class="sun"></div>
+
+  <div class="field">
+    <div class="rows"></div>
+  </div>
+
+  <div class="drone">
+    <div class="beam"></div>
+    <div class="arm l"></div>
+    <div class="arm r"></div>
+    <div class="prop lf"></div>
+    <div class="prop rf"></div>
+    <div class="body"></div>
+    <div class="light"></div>
+  </div>
+
+  <div class="dust"></div>
+  <div class="dark-overlay"></div>
+
+  <div class="content">
+
+    <div class="top">
+      <div class="kicker"><span class="dot"></span>BRASIL PROFUNDO · IA NO AGRO</div>
+      <div class="label-right">ARTIGO LINKEDIN<br>Maio 2026</div>
+    </div>
+
+    <div class="center">
+      <div class="hook-line">Enquanto o tech urbano discute prompt</div>
+      <div class="headline">O AGRO BRASILEIRO<br>JÁ CORTOU <span class="num">90%</span><br>DO DEFENSIVO COM IA.</div>
+      <div class="subline">Visão computacional em drones, pulverização seletiva, R$ 25,6 bilhões investidos em 2026. O futuro do tradicional brasileiro está acontecendo agora.</div>
+    </div>
+
+    <div class="bottom">
+      <div class="author">
+        <div class="name">APOLO SANTOS</div>
+      </div>
+      <div class="source">Fontes: ConectaAgro 2026 · CNA Brasil 2026</div>
+    </div>
+
+  </div>
+
+</div>
+</body>
+</html>

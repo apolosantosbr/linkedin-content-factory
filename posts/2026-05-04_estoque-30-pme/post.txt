@@ -1,0 +1,57 @@
+============================================================
+AGENDAR: SEGUNDA 04/05/2026 - 09h00 BRT
+DIMENSAO IMAGEM: 1080x1350 (4:5 portrait)
+============================================================
+
+Empresas que operam previsão de demanda no MÉTODO TRADICIONAL têm entre 20 e 30% de excesso de estoque. E ninguém comenta isso na reunião de segunda.
+
+Tem uma frase que circula em distribuidora há décadas: ESTOQUE PARADO É DINHEIRO MORTO. E não é só na distribuidora. Tem repetição desse problema em farmácia, autopeça, material de construção, atacarejo regional, distribuidora de bebida e supermercado de bairro. Setor diferente, mesmo padrão: comprou demais, vendeu de menos, e o saldo virou prateleira parada.
+
+A consultoria Falconi mapeou que distribuidoras brasileiras operando previsão de demanda no método tradicional carregam 20 a 30% de excesso de estoque. E compram até 20% acima do volume ideal de reposição (Falconi, 2026). UniSoma documenta padrão parecido em distribuição com SKU complexo. O número não é exótico. É média de mercado.
+
+IA preditiva não é luxo. É DESBLOQUEIO de capital. Modelo bem treinado lê sazonalidade, ciclo de promoção, comportamento de cliente recorrente, devolução por linha, ruptura por SKU, e devolve recomendação de compra com janela de erro muito menor que planilha. O resultado é capital de giro respirando. Em uma distribuidora média entre R$ 20 e R$ 50 milhões de receita, liberar 20% de estoque inflado é tirar entre R$ 4 e R$ 10 milhões de cima da prateleira. Esse dinheiro vira folha, vira investimento, vira ar pra negociar com fornecedor. E vira margem que não precisa vir de promoção.
+
+Quando o time fala que "a IA não serve pro nosso negócio", normalmente é porque ainda não olhou pro estoque com microscópio. Olhou pro relatório de cima. A IA não precisa mudar a empresa. Ela precisa SOLTAR o capital que a empresa já tem trancado em SKU que não gira.
+
+Quanto da sua receita está empoeirando no estoque agora?
+
+#Estoque #Varejo #PME #InteligenciaArtificial #GestaoDeNegocios #SupplyChain #DistribuicaoBrasil
+
+============================================================
+PROMPT PRA GERAR THUMBNAIL EM IA (ChatGPT/Gemini/DALL-E)
+============================================================
+
+## Prompt principal (capa de revista editorial)
+
+Editorial magazine cover, vertical 4:5 portrait. Off-white beige paper background (#F0EAD9) with very subtle texture, like printed magazine. Top: black masthead "SIMPLIFICA" in serif Playfair Display 38pt with a thin black rule below. Right of masthead: small caps issue date "Maio 2026 · Numero especial · PME". Below masthead: red accent strip with category text "RAIO X DO VAREJO TRADICIONAL" in 13pt uppercase, letter-spacing 4px, color #C8392F. Center: massive serif numeral "30%" in Playfair Display 360pt black, the "%" symbol in editorial red. Below the number: pull quote in 30pt bold sans serif "do estoque da distribuidora tradicional brasileira está sobrando. E ninguém comenta na reunião de segunda." with a vertical red bar on the left margin. Bottom: three-column data row with thin black rules above each column showing "20% Compra acima do volume", "R$ 6 mi Capital empoeirando", "5+ Setores afetados". Footer: "APOLO SANTOS" left, "Fonte · Falconi 2026" right. Print magazine aesthetic, generous white space, sophisticated, business journal vibe. 1080x1350.
+
+## Variantes
+
+### Variante 2 — Capa de jornal economico
+Newspaper-style cover. Background: aged newsprint paper texture. Hero typography in Tiempos Headline serif. Black ink, bold red accent. Massive "30%" headline. Editorial pull quote. Three column footer with stats. Mood reminiscent of Financial Times / Valor Econômico. 1080x1350.
+
+### Variante 3 — Editorial luxury minimal
+Ultra-minimal editorial cover. Pure off-white background, no header chrome. Centered massive serif "30%" in deep burgundy (#5A1A1A). Below in serif: "do estoque PME está sobrando." Tiny credit at the very bottom. Generous white space, almost like a poster from a design biennale. Recoleta or DM Serif Display. 1080x1350.
+
+## Negative prompt
+
+cartoon, childish, gradients, neon, cluttered chart, fake stock photo people, blurry text, low contrast, em-dash, hifen, missing portuguese accents (sobrando without acento, ninguém without acento), Microsoft Excel UI, pie chart cliche, dollar sign instead of R$, watermark, busy patterns, rainbow palette.
+
+## Specs tecnicas
+
+- Ratio: 1080 x 1350 (4:5 portrait)
+- Resolucao: 300 DPI equivalente
+- Fonte hero: Playfair Display peso 900 (alternativas: Tiempos Headline, Recoleta, DM Serif Display, Domaine Display)
+- Fonte body: Inter peso 600/700/800 (alternativas: Söhne, Neue Haas Grotesk, Manrope)
+- Modelos recomendados: Ideogram 2.0 (texto perfeito), Midjourney v6 com `--style raw --ar 4:5`
+
+## Direcao de paleta
+
+| Cor | Hex | Uso |
+|-----|-----|-----|
+| Bege editorial | `#F0EAD9` | Fundo principal (sensacao de papel) |
+| Preto rico | `#0A0A0A` | Tipografia hero, regras |
+| Vermelho editorial | `#C8392F` | Acento — "%", barra vertical, "sobrando", categoria |
+| Bordo profundo | `#5A1A1A` | Logo masthead "SIMPLIFICA" |
+| Cinza editorial | `#5A5A5A` | Issue date, footer secundario |
+| Cinza pull | `#4A4A4A` | Kicker line |

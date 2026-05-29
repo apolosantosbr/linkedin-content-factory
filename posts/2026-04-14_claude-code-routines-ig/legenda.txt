@@ -1,0 +1,25 @@
+Enquanto você lê isso, o Claude pode estar rodando um relatório inteiro pro seu time. Sem você abrir nada.
+
+A Anthropic lançou hoje (14/04) uma coisa chamada Routines no Claude Code.
+Basicamente: você agenda uma tarefa UMA vez e ela roda sozinha, na nuvem deles.
+Seu Mac pode estar desligado. Você pode estar dormindo. Tanto faz.
+
+Pra quem gere time, isso muda o jogo:
+→ Relatório semanal do GitHub toda segunda 8h
+→ Monitoramento de concorrente toda madrugada
+→ Workflow de API em loop
+
+Limites por plano: Pro 5/dia, Max 15/dia, Team 25/dia.
+
+A pergunta que importa:
+O que VOCÊ ainda faz toda semana na mão que já podia estar rodando sozinho?
+
+Responde nos comentários. Me conta sua tarefa mais repetitiva — eu volto com a rotina pronta.
+
+Salva pra quando você for testar.
+Compartilha com aquele sócio que vive dizendo "não tenho tempo".
+
+—
+Fonte: 9to5Mac / Anthropic (14/04/2026)
+
+#Produtividade #InteligenciaArtificial #GestaoDeTime #ClaudeCode #JogoDaGestao

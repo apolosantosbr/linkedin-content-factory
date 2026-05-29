@@ -1,0 +1,67 @@
+============================================================
+AGENDAR: SEGUNDA 12/05/2026 - 10h00 BRT
+DIMENSAO IMAGEM: 1080x1350 (4:5 portrait)
+============================================================
+
+95% das iniciativas de IA não geram retorno (MIT, 2025). Só 6% das empresas extraem valor real (McKinsey, 2025). O gap não está na ferramenta. Está na FLUÊNCIA.
+
+O MIT estudou 300 iniciativas de IA generativa. Apenas 5% chegou à produção com ROI mensurável (MIT NANDA, 2025). A McKinsey ouviu 1.500 líderes globais. 80% das empresas estão "empilhando IA em cima de processo antigo sem repensar nada" (McKinsey, 2025).
+
+Não falta ferramenta. Falta FLUÊNCIA EM IA. Como em qualquer idioma, ter dicionário não te faz fluente. Assinar ChatGPT não te faz operador.
+
+Eu fiz a certificação oficial do AI Fluency Framework da Anthropic. O framework não é meu. É público (Anthropic, 2025, licença CC BY-NC-SA 4.0).
+
+São OS 4Ds.
+
+Delegation: o que humano faz, o que IA faz.
+Description: como você conversa com a IA.
+Discernment: como você avalia o output.
+Diligence: quem responde pelo resultado.
+
+Cinco dias atrás eu chamei adoção sem processo, dado e KPI de TEATRO DIGITAL. Os 4Ds são a SAÍDA DO PALCO.
+
+Vou destrinchar cada um deles nos próximos 7 posts. Começando quarta com D1 Delegation.
+
+Em qual dos 4Ds sua empresa tropeça mais hoje?
+
+#InteligenciaArtificial #AIFluency #PME #Lideranca #Anthropic
+
+============================================================
+PRIMEIRO COMENTARIO (postar imediatamente apos publicacao)
+============================================================
+
+Materiais oficiais que cito no post:
+
+→ Curso gratuito Anthropic AI Fluency: https://anthropic.skilljar.com/ai-fluency-framework-foundations
+→ Documentação pública do framework: https://aifluencyframework.org/
+→ AI Fluency Index (estudo Anthropic 2026, 50.000+ interações): https://www.anthropic.com/research/AI-fluency-index
+
+Na quarta solto o D1 Delegation aqui mesmo. Salva o post pra ver de novo quando o D2 sair.
+
+============================================================
+PROMPT PRA GERAR THUMBNAIL EM IA (ChatGPT/Gemini/DALL-E/Midjourney)
+============================================================
+
+DIMENSAO: 1080x1350 (4:5 portrait)
+TEMPLATE: T6 — 4 quadrantes em sentido horario D1 → D2 → D3 → D4
+PALETA: navy #0F1E33 / dourado fosco #C9A14A / creme #F4EFE5 / cinza #A8B2C1 / teal #3B7A6E
+
+PROMPT PRINCIPAL:
+
+Editorial publication cover, deep navy blue background hex #0F1E33, vertical 4:5 portrait layout 1080x1350, framework infographic in the style of a vintage Penguin Classics technical manual fused with a modern enterprise pitch deck.
+
+Top band: a centered serif-meets-condensed headline reading "OS 4Ds DA FLUÊNCIA EM IA" with the term "4Ds" rendered in matte burnished gold (#C9A14A), the rest of the headline in warm off-white cream (#F4EFE5). Above the headline, a tiny eyebrow tag in muted teal-green (#3B7A6E) reading "FRAMEWORK ANTHROPIC" between two short horizontal rules. Below the headline, a small italic subhead in cool light grey (#A8B2C1): "framework Anthropic, traduzido pra PME brasileira".
+
+Center: a precise 2x2 grid of four equal quadrants framed by a thin matte gold (#C9A14A) hairline divider forming a perfect cross and outer frame. Each quadrant contains, top-aligned, a massive serif numeral in matte gold reading D1, D2, D3 or D4 with a small superscript number, in the weight of Playfair Display Black. Below each numeral, a condensed sans-serif uppercase label in cream (#F4EFE5), Bebas Neue style, generous letter-spacing: DELEGATION (top-left), DESCRIPTION (top-right), DISCERNMENT (bottom-right), DILIGENCE (bottom-left). At the bottom of each quadrant, separated by a faint hairline rule, a tiny two-line caption in light grey (#A8B2C1) Inter Medium reading respectively: "o que humano faz, o que IA faz" / "como você conversa com a IA" / "como você avalia o output" / "quem responde pelo resultado".
+
+Top corners and bottom corners of the entire composition: small L-shaped gold corner brackets, like a viewfinder.
+
+Bottom band: a single short gold horizontal rule centered, then "APOLO SANTOS" in condensed cream caps with wide letter-spacing, then a smaller line in cool grey caps reading "CERTIFICADO ANTHROPIC AI FLUENCY · CC BY-NC-SA 4.0" with the middle bullet in matte gold.
+
+Mood: epistemic authority, technical manual, high-end magazine cover, restrained luxury, sober and quiet. Subtle radial vignette of soft teal at the very top and a hint of warm gold at the very bottom for atmospheric depth, otherwise flat editorial.
+
+NEGATIVE PROMPT: no neon, no glow, no cyberpunk, no 3D, no isometric, no robot illustrations, no brain illustrations, no stock photography of people, no hands, no laptops, no charts, no graphs, no emoji, no icons in the quadrants, no drop shadow, no bevel, no chrome, no rainbow, no blur, no bokeh, no AI generated faces, no signatures, no watermarks other than the explicit footer.
+
+PARAMETROS MIDJOURNEY: --ar 4:5 --style raw --v 6
+
+VARIANTES + REFERENCIAS COMPLETAS: ver thumbnail-prompt.md na pasta do post.

@@ -1,0 +1,62 @@
+============================================================
+AGENDAR: QUINTA 07/05/2026 - 10h00 BRT
+DIMENSAO IMAGEM: 1080x1350 (4:5 portrait)
+============================================================
+
+65% das pequenas e médias empresas brasileiras já adotaram IA agêntica. 72% ainda está na fase de experimento. As duas estatísticas são verdadeiras ao mesmo tempo. E é aí que mora o problema.
+
+Eu observo o seguinte. O Sebrae diz que 44% das pequenas empresas usam IA (Sebrae, 2025). Levantamentos de mercado citam 65% pra IA agêntica (OpenClaw, 2026). Manchete celebra. Só que o McKinsey, na pesquisa anual State of AI, encontrou um número que ninguém repete: APENAS 6% das empresas no mundo são "AI high performers", entendido como empresas com mais de 5% do EBIT vindo diretamente de IA (McKinsey, 2025).
+
+No Brasil a profundidade é ainda menor. 77% das empresas não alocou orçamento significativo pra IA. 43% investe menos de 2% dos recursos anuais (McKinsey, 2025). Quando 65% diz que "adotou" e 43% investe menos de 2% do que tem, o que está sendo chamado de adoção é quase sempre OUTRA COISA: assinatura de ChatGPT Plus paga no cartão da empresa, prompt copiado e colado em conversa de WhatsApp, chatbot genérico que só troca o "olá" pelo nome da loja.
+
+Eu chamo isso de TEATRO DIGITAL. A empresa monta cenário, contrata a ferramenta, até põe slide na reunião com a palavra "IA". Mas não há PROCESSO redesenhado, não há dado limpo entrando, não há KPI atrelado. Sem isso, IA não gera margem. Gera narrativa pra reunião de board.
+
+Tenho visto o mesmo padrão repetido em indústria média, varejo regional, distribuidora, escritório de serviço, agência. Mesma sequência: ferramenta, foto, post, zero impacto na DRE. A régua real de modernizar com IA em 2026 não é TER FERRAMENTA. É ter processo, dado e KPI. As três coisas juntas. Faltou uma, virou teatro. Quem ficar sem uma das três entra na manchete dos 65%, mas não entra nos 6%.
+
+TEATRO DIGITAL é o que separa quem postou case de quem mexeu na margem.
+
+Em qual dos dois grupos sua empresa está hoje?
+
+#InteligenciaArtificial #PME #TransformacaoDigital #McKinsey #GestaoEstrategica #EmpreendedorismoBR #IA
+
+============================================================
+PROMPT PRA GERAR THUMBNAIL EM IA (ChatGPT/Gemini/DALL-E)
+============================================================
+
+## Prompt principal (split duplo editorial)
+
+Editorial poster, vertical 4:5 portrait. Deep burgundy-black background (#1F0A0A) with subtle muted radial glows — green tint top-left, red tint bottom-right. At the very top, a faint golden gradient suggesting theatrical curtain. Top-left small pill badge in muted gold "PARADOXO 2026 · ADOÇÃO vs RESULTADO". Center: dramatic split-screen comparison divided by a thin vertical golden rule (#C9A14A) with a small "vs" medallion in the middle. Left side: tiny green eyebrow "ADOTARAM IA", massive serif numeral "65%" in optimistic green (#3FA34D, Playfair Display weight 900, ~230pt), bold caps subtitle "DAS PMEs BRASILEIRAS", source line in italic small caps "Sebrae + OpenClaw, 2026". Right side mirrored: tiny red-coral eyebrow "TÊM EBIT VINDO DE IA", massive serif numeral "6%" in editorial red (#C8392F), subtitle "DAS EMPRESAS NO MUNDO", source "McKinsey State of AI, 2025". Bottom band with thin gold rule above: small italic line "eu chamo isso de" then enormous condensed sans serif "TEATRO DIGITAL." in Bebas Neue weight 900, white with the word "DIGITAL" in muted gold. Footer: "APOLO SANTOS" gold left, source credits muted right. Dramatic, theatrical, editorial smart. 1080x1350.
+
+## Variantes
+
+### Variante 2 — Cartaz teatral classico
+Theatre poster aesthetic. Deep velvet red curtain texture at the very top, fading into pure black. Two columns of statistics like an opera bill. Hand-painted serif feel for "TEATRO DIGITAL", thinner gold leaf border. Old playbill feel with modern data inside. Same comparison: 65% green vs 6% red. 1080x1350.
+
+### Variante 3 — Brutalist split
+Pure brutalism. Background split exactly in half — left half deep green (#0F2A18), right half oxblood (#3A0E0E). White serif numerals "65%" and "6%" centered on each side. Black bar at the bottom with white "TEATRO DIGITAL" condensed sans. No badges, no decoration. Just the contrast. 1080x1350.
+
+## Negative prompt
+
+cartoon, childish, fake stock photo people, blurry text, lorem ipsum, gradient excessive rainbow, neon excessive, cluttered chart, missing portuguese accents (adocao without til, tem without circumflex), hifen, em-dash, watermark, busy decorative ornaments, oversaturation, real theatre actors photographs, generic stage clip art.
+
+## Specs tecnicas
+
+- Ratio: 1080 x 1350 (4:5 portrait)
+- Resolucao: 300 DPI equivalente
+- Fonte numeros: Playfair Display peso 900 (alternativas: Tiempos Headline, Recoleta, DM Serif Display, Domaine Display)
+- Fonte body: Inter peso 700/800 (alternativas: Söhne, Neue Haas Grotesk, Manrope)
+- Fonte banner "TEATRO DIGITAL": Bebas Neue ou Anton (sans condensada peso 900)
+- Modelos recomendados: Ideogram 2.0 (texto perfeito), Midjourney v6 (`--ar 4:5 --style raw`), Recraft V3
+
+## Direcao de paleta
+
+| Cor | Hex | Uso |
+|-----|-----|-----|
+| Bordo profundo | `#1F0A0A` | Fundo principal |
+| Preto cortina | `#0F0606` | Gradient inferior |
+| Verde otimismo | `#3FA34D` | Numero "65%" — falso conforto |
+| Verde-claro suave | `#6FCB7A` | Eyebrow esquerda |
+| Vermelho alerta | `#C8392F` | Numero "6%" — verdade dura |
+| Coral-claro | `#FF7A6E` | Eyebrow direita |
+| Dourado fosco | `#C9A14A` | Cortina, divisor, "DIGITAL", autor |
+| Branco puro | `#FFFFFF` | Headlines, "TEATRO" |

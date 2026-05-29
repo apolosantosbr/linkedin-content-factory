@@ -1,0 +1,89 @@
+============================================================
+AGENDAR: QUARTA 14/05/2026 - 09h00 BRT
+DIMENSAO IMAGEM: 1080x1350 (4:5 portrait)
+============================================================
+
+Na segunda apresentei OS 4Ds. Hoje desco no D1: DELEGATION. 37% do tempo que a IA "economiza" é gasto consertando o output (Workday, 2026).
+
+O âncora deixou claro: o gap não está na ferramenta. Está na fluência.
+
+DELEGATION é o D1 do AI Fluency Framework (Anthropic, 2025, CC BY-NC-SA 4.0). Decidir o que humano faz, o que IA faz, o que fazem juntos.
+
+Três competências. Pensa em dirigir.
+
+Problem Awareness: PRA ONDE você vai. O que está tentando fazer.
+Platform Awareness: o CARRO. O que essa ferramenta faz bem e mal.
+Task Delegation: QUEM dirige. Humano, IA ou os dois.
+
+Ligar o motor (assinar ChatGPT) não é dirigir. As três perguntas vêm antes do acelerador.
+
+Cinco perguntas antes do ChatGPT.
+
+1. Que trabalho você está tentando fazer?
+2. Tem regra clara ou exige julgamento?
+3. O que ela faz bem e mal?
+4. Onde o erro custa caro?
+5. Humano, IA ou os dois?
+
+Caso comum. Varejista compra chatbot WhatsApp de regra fixa. Em 90 dias, NPS cai e fila triplica. 40% das perguntas travam (Portal IM, 2025). Pulou as cinco perguntas.
+
+Sexta sai o D2: DESCRIPTION. Como CONVERSAR com a IA depois que você já sabe pra que.
+
+Qual das cinco perguntas você nunca tinha feito antes de abrir o ChatGPT?
+
+#InteligenciaArtificial #AIFluency #Delegation #PME #Anthropic
+
+============================================================
+PRIMEIRO COMENTARIO (postar imediatamente apos publicacao)
+============================================================
+
+Materiais e fontes do post:
+
+→ AI Fluency Framework (Anthropic, oficial): https://aifluencyframework.org/
+→ Curso gratuito Anthropic AI Fluency: https://anthropic.skilljar.com/ai-fluency-framework-foundations
+→ Workday "Elevating Human Potential" 2026 (relatório que cita os 37%): https://www.workday.com/en-us/insights/ai-elevating-human-potential.html
+→ Portal Information Management 2025 (78% Brasil em Automação 1.0): https://docmanagement.com.br/11/27/2025/hiperautomacao-ia-78-das-empresas-brasileiras-ainda-estao-presas-na-automacao-1-0/
+
+Sexta sai o D2 DESCRIPTION aqui mesmo. Salva o post pra ver as cinco perguntas de novo na próxima vez que você abrir o ChatGPT.
+
+============================================================
+PROMPT PRA GERAR THUMBNAIL EM IA (Ideogram/ChatGPT/DALL-E/Gemini/Midjourney)
+============================================================
+
+DIMENSAO: 1080x1350 (4:5 portrait)
+TEMPLATE: T11 PERGUNTA GIGANTE TIPOGRAFICA (tipografia editorial pura, sem icone, sem grafico)
+PALETA: oliva profundo #3F4A2C / creme palido #F4EFE5 / mostarda fosca #C9A14A / cinza terra #A89B82
+
+TEXTO LITERAL DA IMAGEM (manter acentos PT-BR em all-caps):
+Eyebrow:   D1  DELEGATION  ·  PROBLEM AWARENESS
+Pergunta:  QUAL O TRABALHO QUE VOCÊ ESTÁ TENTANDO FAZER?
+Subheader: framework Anthropic AI Fluency · post 2 de 7
+Footer:    APOLO SANTOS  ·  CERTIFICADO ANTHROPIC AI FLUENCY  ·  CC BY-NC-SA 4.0
+
+PROMPT PRINCIPAL:
+
+Editorial typographic poster, vertical 4:5 portrait composition, exact dimensions 1080x1350 pixels, deep olive-green background hex #3F4A2C with a barely perceptible matte paper grain, in the visual language of a contemporary art gallery exhibition poster fused with a Penguin Classics didactic volume cover and a Massimo Vignelli grid system layout.
+
+The composition is built on a strict 12-column editorial grid with generous outer margins of approximately 90 pixels. At the very top, between two short horizontal hairline rules in matte mustard gold hex #C9A14A, a small all-caps eyebrow tag in condensed sans-serif (Bebas Neue or Anton style), letter-spacing wide at roughly 0.4em, in mustard gold #C9A14A, reading exactly: "D1  DELEGATION  ·  PROBLEM AWARENESS". The middle bullet between DELEGATION and PROBLEM AWARENESS is rendered as a centered low dot in the same mustard gold.
+
+The hero of the composition occupies the center 55 percent of the canvas: a single massive serif headline question in pale cream hex #F4EFE5, set in editorial serif typeface peso 900 such as Playfair Display Black, Tiempos Headline Black, or Domaine Display Black, with tight optical leading (line-height around 0.95) and slightly negative letter-spacing. The text is centered, broken across three balanced lines, reading exactly with full Brazilian Portuguese accents preserved in all-caps: "QUAL O TRABALHO / QUE VOCÊ ESTÁ / TENTANDO FAZER?" The diacritics on VOCÊ (circumflex over E) and ESTÁ (acute over A) must be clearly rendered, sharp, and visually integrated, not afterthoughts. The question mark at the end is full size, same weight, in cream.
+
+Below the headline, separated by a short centered hairline rule in mustard gold #C9A14A roughly 80 pixels wide, a small italic subhead in warm earth-grey hex #A89B82, Inter or similar humanist sans-serif italic at weight 400, lowercase, reading exactly: "framework Anthropic AI Fluency · post 2 de 7". The bullet in mustard gold.
+
+At the bottom of the composition, occupying a slim band roughly 130 pixels tall, another short hairline rule in mustard gold above a centered footer line in condensed sans-serif all-caps, generous letter-spacing, in warm earth-grey #A89B82, reading exactly: "APOLO SANTOS  ·  CERTIFICADO ANTHROPIC AI FLUENCY  ·  CC BY-NC-SA 4.0". The bullets between segments rendered in mustard gold #C9A14A as a visual rhythm.
+
+Four small L-shaped corner brackets in mustard gold #C9A14A in each corner of the composition, like a viewfinder or print registration mark, suggesting framing and intentionality, exactly 22 pixels long on each leg, 2 pixels stroke, inset roughly 28 pixels from the canvas edge.
+
+Mood and atmosphere: contemplative, sober, restrained, museum-grade typographic poster, the question itself as the subject of the artwork. The reader stops scrolling because the question is hanging in the air. No infographic, no diagram, no chart, no icon, no illustration of any object or person, no robot, no brain, no laptop. Pure typographic editorial. Soft barely-visible warm vignette in the bottom corners only, otherwise flat color field.
+
+Color palette strictly limited: #3F4A2C deep olive background, #F4EFE5 pale cream for the headline question, #C9A14A matte mustard gold for eyebrow, hairlines, bullets and corner brackets, #A89B82 warm earth-grey for subheader and footer. No other colors permitted. No gradients on text. No drop shadows. No 3D. No bevels. Razor-sharp print-grade typography.
+
+Style references: Pentagram editorial design (Paula Scher poster work), Massimo Vignelli grid systems, FT Weekend Magazine, Aperture Magazine cover design, Bauhaus didactic poster, Jan Tschichold elementare typographie, modern Penguin Modern Classics didactic series.
+
+NEGATIVE PROMPT: no neon, no glow, no cyberpunk, no glitch, no 3D rendering, no isometric illustration, no robot, no humanoid, no brain, no light bulb, no gear icon, no laptop, no smartphone, no hand, no person, no face, no AI generated faces, no stock photography, no chart, no graph, no bar chart, no pie chart, no flowchart, no diagram, no infographic with arrows, no split screen, no before-after, no quadrant grid, no four-box layout, no emoji, no clip art, no drop shadow, no bevel, no chrome, no metallic 3D effect, no rainbow gradient, no gradient on text, no blur, no bokeh, no depth of field, no signatures, no watermarks other than the explicit footer, no extra text beyond what is specified, no English typos, no missing diacritics on VOCÊ or ESTÁ, no Latin lorem ipsum, no placeholder text, no QR code, no barcode, no logo other than text mark APOLO SANTOS, no busy background pattern, no distressed grunge texture, no driving illustration, no car, no steering wheel, no road.
+
+PARAMETROS MIDJOURNEY: --ar 4:5 --style raw --v 6
+
+RECOMENDACAO DE FERRAMENTA: comecar por Ideogram ou ChatGPT image (DALL-E 3) porque renderizam acentos PT-BR (VOCÊ, ESTÁ) com mais fidelidade que Midjourney. Se for usar MJ, gerar 4 variantes e selecionar a que mantem os diacriticos visiveis.
+
+VARIANTES A (minimalista) + B (D1 superscritado) + REFERENCIAS COMPLETAS + CHECKLIST DE VALIDACAO: ver thumbnail-prompt.md na pasta do post.

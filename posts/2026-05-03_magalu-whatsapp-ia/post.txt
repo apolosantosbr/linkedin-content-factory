@@ -1,0 +1,67 @@
+============================================================
+AGENDAR: DOMINGO 03/05/2026 - 10h00 BRT
+DIMENSAO IMAGEM: 1080x1350 (4:5 portrait)
+============================================================
+
+Magalu liberou compra inteira pelo WhatsApp da Lu. 1 milhão de clientes recorrentes já compram dentro da conversa. E o protocolo NÃO É PROPRIETÁRIO.
+
+Em 2026 a Magalu lançou a Lu como agente conversacional dentro do WhatsApp. Cliente pergunta, escolhe produto, paga e fecha tudo SEM SAIR da janela do WhatsApp (Exame, 2026). Liberado primeiro pra 1 milhão de clientes recorrentes.
+
+Aqui mora a tese. O stack que a Magalu usou não é exclusivo deles. Em 2026 o WhatsApp Business API liberou IA conversacional pra qualquer PME atender 24H POR DIA. No Brasil, plataformas como Predize (Mia), Anota AI (40 mil restaurantes) e dezenas de outras já entregam o mesmo nível de fluxo: conversa, oferta, pagamento, confirmação. Sem app, sem checkout externo, sem link clicável pra fora.
+
+A diferença entre a Magalu e a distribuidora regional não é tecnologia. É COMEÇAR. O ferramental já está na rua, com preço de PME. Quem não montar agente conversacional no WhatsApp até 2027 vai estar competindo com gente que escala atendimento sem contratar gente.
+
+A cena se repete em todo varejo tradicional brasileiro. Cliente manda foto do produto pelo WhatsApp, pergunta se tem, qual o preço, qual o prazo. Hoje resposta humana, em horário comercial. Daqui a pouco resposta agente, em qualquer hora. E quem responde primeiro fecha venda.
+
+Em operações que acompanho, ROI médio do agente WhatsApp bate em 60 a 90 dias quando o catálogo é simples e o ticket é recorrente. Gás, água, ração, óleo, kit de limpeza, suplemento, peça de reposição. Catálogo enxuto, recompra clara, atendimento humano caro. Encaixe de manual.
+
+Sua empresa atende cliente no WhatsApp ainda manual? Conta nos comentários. Quero mapear quantas PMEs ainda estão em 2014.
+
+#WhatsApp #IA #Varejo #PME #Automacao #Atendimento #VendasDigitais
+
+============================================================
+PROMPT PRA GERAR THUMBNAIL EM IA (ChatGPT/Gemini/DALL-E)
+============================================================
+
+## Prompt principal (mockup ilustrativo)
+
+Vertical 4:5 social media graphic, dark teal green background gradient (#054943 to #0B6F62), subtle WhatsApp-style doodle pattern faded behind. Top headline in bold white sans serif: "Magalu vende DENTRO do WhatsApp da Lu." with the word "DENTRO" highlighted in vibrant golden yellow gradient. Center: stylized chat conversation mockup, NOT a literal WhatsApp screenshot, with rounded message bubbles. Customer asks for a 5L air fryer, the Lu assistant replies with a product card showing an Air Fryer R$ 389,00 in a green bubble, then a yellow "Pagar agora · Pix" button, and a confirmation tick. Bottom area shows "1 milhão" in massive yellow gradient typography with subtitle "de clientes já compram na conversa." Bottom signature "APOLO SANTOS" small with source "Fonte: Exame, 2026". Clean, modern, editorial mockup style. 1080x1350 portrait.
+
+## Variantes
+
+### Variante 2 — Foto realista de celular
+Photograph of a hand holding a smartphone displaying a stylized chat interface in dark mode WhatsApp aesthetic (NOT real WhatsApp). The phone screen shows a Magalu shopping conversation with green message bubbles, product card and a yellow "Pagar agora" button. Background: dark green textured surface. Top text overlay (above the phone): "1 milhão de clientes ja compram dentro da conversa." in bold white sans, with "1 milhão" highlighted in golden yellow. Editorial product photography lighting, depth of field. 1080x1350 portrait.
+
+### Variante 3 — Flat illustration poster
+Flat vector illustration in editorial poster style. Dark teal background. Center: stylized chat bubbles arranged vertically, simplified shapes, brand colors only (teal, green WhatsApp #25D366, yellow Magalu #FFD400). Bold typography overlay "Magalu vende DENTRO do WhatsApp" with "DENTRO" in yellow. Bottom strip: stat block "1 milhão de clientes" in large yellow numerals. Bauhaus-meets-fintech aesthetic, no gradients, geometric purity. 1080x1350.
+
+## Negative prompt
+
+literal WhatsApp logo, real Lu Magalu mascot face, copyrighted brand assets, AI-generated hands with extra fingers, blurry text, lorem ipsum, cluttered layout, low contrast, hifen, em-dash, missing portuguese accents, fake Apple iOS chrome, bezel reflections excessive, oversaturation, generic stock photo people, watermarks, text artifacts.
+
+## Specs tecnicas
+
+- Ratio: 1080 x 1350 (4:5 portrait)
+- Resolucao: 300 DPI equivalente
+- Fonte sugerida: Inter (peso 600, 800, 900) ou Manrope, SF Pro
+- Fonte alternativa para "1 milhão": Söhne, Neue Haas Grotesk, Recoleta peso 900
+- Modelos recomendados: Ideogram 2.0 (preserva texto), Midjourney v6 (--ar 4:5 --style raw), Recraft
+
+## Direcao de paleta
+
+| Cor | Hex | Uso |
+|-----|-----|-----|
+| Verde-petroleo escuro | `#054943` | Fundo principal (gradient base) |
+| Verde-WhatsApp medio | `#0B6F62` | Gradient mid |
+| Verde-WhatsApp claro | `#25D366` | Bolha de saida (Lu) + check |
+| Verde-bubble entrada | `#1F3D3A` | Bolha de entrada (cliente) |
+| Verde mint claro | `#BDFBE0` | Kicker e author |
+| Amarelo Magalu primario | `#FFD400` | Destaque "DENTRO", botao Pix, "1 milhão" |
+| Laranja Magalu secundario | `#FFAA00` | Gradient destaque |
+| Branco | `#FFFFFF` | Headline |
+
+## Ressalvas legais
+
+- NAO usar logo oficial WhatsApp ou Magalu
+- Mockup ESTILIZADO da conversa (cores e estrutura inspiradas, nao replica fiel)
+- Lu pode ser referenciada por nome no texto, sem avatar oficial

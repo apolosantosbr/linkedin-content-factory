@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<title>Stack self-hosted US$ 20</title>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&display=swap');
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+body { background: #000; }
+
+.image {
+  width: 1200px;
+  height: 630px;
+  background: #F4F1EA;
+  font-family: 'Inter', -apple-system, system-ui, sans-serif;
+  color: #0A0420;
+  padding: 36px 48px 32px;
+  position: relative;
+  overflow: hidden;
+}
+
+/* ============ HEADER ============ */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 14px;
+  border-bottom: 3px solid #0A0420;
+  margin-bottom: 26px;
+}
+
+.masthead {
+  font-family: 'Playfair Display', serif;
+  font-size: 30px;
+  font-weight: 900;
+  letter-spacing: -1px;
+  color: #0A0420;
+}
+
+.masthead .dot {
+  color: #7C3AED;
+}
+
+.issue {
+  font-size: 11px;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: #6B7280;
+  font-weight: 700;
+}
+
+/* ============ BODY GRID ============ */
+.body {
+  display: grid;
+  grid-template-columns: 1.35fr 1fr;
+  gap: 40px;
+  align-items: flex-start;
+}
+
+/* LEFT column */
+.category {
+  font-size: 12px;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: #7C3AED;
+  font-weight: 800;
+  margin-bottom: 10px;
+}
+
+.headline {
+  font-family: 'Playfair Display', serif;
+  font-size: 58px;
+  font-weight: 900;
+  line-height: 0.95;
+  letter-spacing: -2px;
+  color: #0A0420;
+  margin-bottom: 18px;
+}
+
+.headline .pop {
+  color: #7C3AED;
+  font-style: italic;
+}
+
+.subtitle {
+  font-size: 16px;
+  color: #374151;
+  line-height: 1.45;
+  max-width: 520px;
+  border-left: 3px solid #7C3AED;
+  padding-left: 14px;
+  font-weight: 500;
+}
+
+/* RIGHT column — price compare card */
+.price-card {
+  background: #0A0420;
+  border-radius: 14px;
+  padding: 26px 28px;
+  color: #FFFFFF;
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0 16px 40px -16px rgba(124, 58, 237, 0.5);
+}
+
+.price-card::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background:
+    radial-gradient(at 100% 0%, rgba(124, 58, 237, 0.6) 0%, transparent 55%),
+    radial-gradient(at 0% 100%, rgba(103, 61, 230, 0.4) 0%, transparent 55%);
+  pointer-events: none;
+}
+
+.pc-label {
+  position: relative;
+  z-index: 2;
+  font-size: 10px;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: #A78BFA;
+  font-weight: 800;
+  margin-bottom: 14px;
+}
+
+.pc-row {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  align-items: baseline;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+.pc-old {
+  font-size: 36px;
+  font-weight: 900;
+  color: #6B7280;
+  text-decoration: line-through;
+  text-decoration-color: #EF4444;
+  text-decoration-thickness: 3px;
+  letter-spacing: -1px;
+}
+
+.pc-old small {
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.pc-arrow {
+  font-size: 22px;
+  color: #22D3EE;
+  font-weight: 900;
+}
+
+.pc-new {
+  font-size: 62px;
+  font-weight: 900;
+  color: #22D3EE;
+  letter-spacing: -2px;
+  line-height: 1;
+  text-shadow: 0 0 24px rgba(34, 211, 238, 0.4);
+}
+
+.pc-new small {
+  font-size: 18px;
+  color: #A7F3D0;
+  font-weight: 700;
+}
+
+.pc-unit {
+  position: relative;
+  z-index: 2;
+  font-size: 12px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #C4B5FD;
+  font-weight: 700;
+  margin-top: 4px;
+}
+
+.pc-note {
+  position: relative;
+  z-index: 2;
+  margin-top: 14px;
+  padding-top: 12px;
+  border-top: 1px solid rgba(255, 255, 255, 0.12);
+  font-size: 12px;
+  color: #E5E7EB;
+  line-height: 1.4;
+}
+
+.pc-note strong {
+  color: #FFFFFF;
+}
+
+/* ============ FEATURES (stack) ============ */
+.features {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+  margin-top: 22px;
+}
+
+.feature {
+  border-top: 2px solid #0A0420;
+  padding-top: 10px;
+}
+
+.feature .num {
+  font-family: 'Playfair Display', serif;
+  font-size: 32px;
+  font-weight: 900;
+  line-height: 1;
+  color: #0A0420;
+}
+
+.feature .lbl {
+  font-size: 11px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #4B5563;
+  margin-top: 4px;
+  font-weight: 700;
+}
+
+.feature .desc {
+  font-size: 12px;
+  color: #6B7280;
+  margin-top: 3px;
+  line-height: 1.3;
+}
+
+/* ============ FOOTER ============ */
+.footer {
+  position: absolute;
+  left: 48px;
+  right: 48px;
+  bottom: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 10px;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: #6B7280;
+  font-weight: 700;
+  padding-top: 10px;
+  border-top: 1px solid rgba(10, 4, 32, 0.15);
+}
+
+.footer .source {
+  font-style: italic;
+  text-transform: none;
+  letter-spacing: 0;
+  color: #9CA3AF;
+  font-weight: 500;
+  font-size: 11px;
+}
+
+.logo-footer {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.logo-footer .partner {
+  font-size: 9px;
+  letter-spacing: 2px;
+}
+
+.logo-footer img {
+  height: 22px;
+  width: auto;
+}
+</style>
+</head>
+<body>
+<div class="image">
+
+  <!-- HEADER -->
+  <div class="header">
+    <div class="masthead">SIMPLIFICA<span class="dot">.</span></div>
+    <div class="issue">Ed. 14 · abril 2026</div>
+  </div>
+
+  <!-- BODY -->
+  <div class="body">
+
+    <div class="left-col">
+      <div class="category">Stack self-hosted de IA</div>
+      <h1 class="headline">
+        US$ 500 de API,<br>
+        <span class="pop">US$ 20</span> de VPS.
+      </h1>
+      <p class="subtitle">
+        Troquei a conta de OpenAI + Zapier por Ollama + n8n numa VPS.
+        Rodando 24/7. Os dados do cliente não saem da minha infra.
+      </p>
+
+      <div class="features">
+        <div class="feature">
+          <div class="num">01</div>
+          <div class="lbl">Ollama</div>
+          <div class="desc">LLM local, sem API</div>
+        </div>
+        <div class="feature">
+          <div class="num">02</div>
+          <div class="lbl">n8n</div>
+          <div class="desc">Orquestração</div>
+        </div>
+        <div class="feature">
+          <div class="num">03</div>
+          <div class="lbl">VPS</div>
+          <div class="desc">Hostinger 24/7</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- PRICE CARD -->
+    <div class="price-card">
+      <div class="pc-label">Antes → Agora</div>
+
+      <div class="pc-row">
+        <div class="pc-old">US$ 500<small>/mês</small></div>
+      </div>
+
+      <div class="pc-row">
+        <div class="pc-arrow">→</div>
+        <div class="pc-new">US$ 20<small>/mês</small></div>
+      </div>
+
+      <div class="pc-unit">Processa 200 mil workflows/mês</div>
+
+      <div class="pc-note">
+        <strong>Economia de US$ 3.600/ano</strong> comparado à stack cloud equivalente.
+      </div>
+    </div>
+
+  </div>
+
+  <!-- FOOTER -->
+  <div class="footer">
+    <span>APOLO SANTOS</span>
+    <span class="source">Fonte: Apify, 2026</span>
+    <div class="logo-footer">
+      <span class="partner">Parceiro Oficial</span>
+      <img src="logos/Hostinger_Horizontal_Purple.png" alt="Hostinger">
+    </div>
+  </div>
+
+</div>
+</body>
+</html>
