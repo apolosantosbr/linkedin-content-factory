@@ -9,7 +9,7 @@
 ## CORPO DO POST (copiar e colar)
 
 ```
-A imagem acima é um tweet jurando que o travessão entrega quem usou IA. E o pior: tem razão.
+Tem gente jurando que o travessão entrega quem usou IA. E o pior: tem razão.
 
 Travessão solto, "delve", frase atrás de frase do mesmo tamanho. O cliente sente o sotaque na hora.
 

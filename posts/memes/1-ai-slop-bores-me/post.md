@@ -8,7 +8,7 @@
 ## CORPO DO POST (copiar e colar)
 
 ```
-A imagem acima é a cara do seu público lendo o quinto post gerado por IA da semana. Educadamente entediado.
+Seu público lendo o quinto post gerado por IA da semana: educadamente entediado.
 
 Mas pensa comigo: se um humano bate o olho e pensa "isso é slop" em 2 segundos, esse conteúdo não escala a sua marca. Ele só ocupa espaço no feed.
 

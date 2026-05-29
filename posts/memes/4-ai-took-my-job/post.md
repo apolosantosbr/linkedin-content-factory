@@ -8,7 +8,7 @@
 ## CORPO DO POST (copiar e colar)
 
 ```
-A imagem acima: "a IA tomou meu emprego, agora eu só vibro e vejo ela trabalhar". Todo mundo rindo pra não chorar.
+"A IA tomou meu emprego, agora eu só vibro e vejo ela trabalhar." Todo mundo rindo pra não chorar.
 
 Mas calma. A IA não toma o seu cargo. Ela toma as suas tarefas.
 

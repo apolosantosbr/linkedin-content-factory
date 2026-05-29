@@ -8,7 +8,7 @@
 ## CORPO DO POST (copiar e colar)
 
 ```
-A imagem acima é um cachorro de óculos "programando" no maior estilo vibe coding. Eu ri. Depois lembrei dos boletos.
+Um cachorro de óculos "programando" no maior estilo vibe coding. Eu ri. Depois lembrei dos boletos.
 
 Porque é fofo até a IA sugerir um pacote que não existe e o seu código importar problema sozinho.
 
