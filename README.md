@@ -186,17 +186,28 @@ linkedin-content-factory/
 ├── skill-revisar.md         ← manual do agente Revisar
 ├── skill-orquestrador.md    ← manual do agente Orquestrador
 │
-└── posts/                   ← seus posts ficam aqui
-    └── 2026-04-14_vibe-coding-morreu/   ← exemplo de post
-        ├── post.txt         ← texto pronto para publicar
-        ├── imagem.png       ← imagem do post (1080x1350)
-        ├── imagem.html      ← codigo fonte da imagem (editavel)
-        └── revisao.md       ← nota do revisor + changelog
+├── notas/                   ← pesquisa e notas de bastidor (por estagio)
+│   ├── radar/               ← notas-radar-*.md
+│   ├── estrategia/          ← notas-estrategia-*.md
+│   ├── post/                ← notas-post-*.md
+│   ├── thumb/               ← notas-thumb-*.md
+│   ├── revisar/             ← notas-revisar-*.md
+│   └── benchmarking-viralizacao-linkedin-2026.md
+│
+└── posts/                   ← seus posts ficam aqui (agrupados por mes)
+    ├── 2026-04/             ← posts de abril
+    │   └── 2026-04-14_vibe-coding-morreu/   ← exemplo de post
+    │       ├── post.md      ← texto pronto para publicar (bloco de codigo)
+    │       ├── estrategia.md ← angulo, hook, money-line
+    │       ├── thumbnail-prompt.md ← prompt da imagem (Ideogram)
+    │       └── revisao.md   ← nota do revisor + score
+    ├── 2026-05/  ·  2026-06/
+    └── memes/               ← posts de meme (post.md + imagem do meme)
 ```
 
-**Cada post fica na sua propria pasta**, com a data no nome para ficar em ordem.
+**Cada post fica na sua propria pasta**, com a data no nome, dentro do mes.
 
-Padrao: `AAAA-MM-DD_titulo-curto/`
+Padrao: `posts/AAAA-MM/AAAA-MM-DD_titulo-curto/`
 
 ---
 
