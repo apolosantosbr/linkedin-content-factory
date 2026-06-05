@@ -33,7 +33,7 @@ Salva esse carrossel pra revisar antes de ligar a tua próxima IA.
 
 Você mede o ROI da sua IA hoje? Sim ou não, comenta aqui embaixo.
 
-#PMEoperando #Os4Ds #IAaplicada #ROI
+#ROI #IAaplicada #PMEoperando
 ```
 
 ---

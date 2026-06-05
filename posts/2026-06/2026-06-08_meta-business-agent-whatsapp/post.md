@@ -28,7 +28,7 @@ Salva o carrossel pra ligar o teu WhatsApp ainda esta semana.
 
 Você confiaria uma venda a uma IA dentro do seu WhatsApp? Comenta o porquê.
 
-#PMEoperando #Os4Ds #IAaplicada #WhatsAppBusiness
+#WhatsAppBusiness #IAaplicada #PMEoperando
 ```
 
 ---
