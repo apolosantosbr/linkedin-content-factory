@@ -3,7 +3,7 @@
 > Publicar: Quinta 11/06/2026, 10h30 BRT.
 > Item 6 da grade (semana 08-14/06). Formato: #8 Mito vs Verdade (contraponto honesto ao hype do WhatsApp). Inimigo: Consultor-de-livro. Pilar 2 Liderança. Gatilho: save+comment.
 > Thumb (terminal Thumbnail): template #5 Screenshot-vazado.
-> ATENÇÃO FONTE: o Radar trouxe o FATO (Trade Republic recuou da automação total e recontratou 1.000+ humanos) usado como LENTE, mas sem URL fechada. Apolo deve colar o link da matéria no 1º comentário antes de publicar. Sem valuation não verificado.
+> FONTE: o Radar trouxe o FATO (Trade Republic recuou da automação total e recontratou 1.000+ humanos) como LENTE. Apolo decidiu (05/06) publicar SEM link específico, citando como imprensa internacional 2026. PRONTO pra publicar.
 > Link/fonte no 1º comentário, nunca no corpo.
 
 ---
@@ -45,10 +45,7 @@ Salva esse post pra usar quando alguém te vender automação de 100% do atendim
 ## PRIMEIRO COMENTARIO (copiar e colar)
 
 ```
-Fonte:
-
--> Trade Republic (fintech europeia) recuou da automação quase total do atendimento e recontratou mais de 1.000 pessoas pro suporte: cobertura da imprensa internacional, 2026.
-[A CONFIRMAR antes de publicar: colar aqui o link da matéria. O Radar trouxe o fato como lente; a URL fechada ainda precisa ser anexada pelo Apolo.]
+Fonte: cobertura da imprensa internacional (2026) sobre a Trade Republic ter recuado da automação quase total do atendimento e recontratado mais de 1.000 pessoas pro suporte.
 
 Salva esse post pra usar quando alguém te vender automação de 100% do atendimento.
 ```
@@ -64,7 +61,7 @@ Salva esse post pra usar quando alguém te vender automação de 100% do atendim
 - [x] CTA SAVE secundário + pergunta de engajamento
 - [x] Inimigo Consultor-de-livro (o "consultor de slide" que vende automação de 100%)
 - [x] Lente honesta: a IA falhou no LUGAR errado, não "IA não presta"; sem valuation não verificado
-- [ ] FONTE: URL da matéria do Trade Republic A CONFIRMAR pelo Apolo (Radar trouxe fato sem link fechado)
+- [x] FONTE: citada como imprensa internacional 2026 (Apolo decidiu publicar sem URL específica, 05/06)
 - [x] 3 hashtags PascalCase com #PMEoperando
 
 #InteligenciaArtificial #Lideranca #PMEoperando

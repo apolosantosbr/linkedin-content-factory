@@ -13,8 +13,21 @@
 | 5 | 10/06 15h30 | 2026-06-10_meta-cobranca-whatsapp | Previsão datada | Auditor | ✅ pronto |
 | 6 | 11/06 10h30 | 2026-06-11_trade-republic-bot-vs-humano | Mito vs Verdade | Consultor-de-livro | ✅ pronto (URL a confirmar) |
 | 7 | 11/06 15h30 | 2026-06-11_poll-bot-vs-humano-venda | Poll | — | ✅ pronto |
-| 9 | 12/06 16h00 | 2026-06-12_confissao-piloto-travado | Confissão | Auditor | ✅ pronto (relato a confirmar) |
-| 10 | 13/06 11h00 | 2026-06-13_build-in-public-whatsapp-7-dias | Build in public | — | ✅ pronto (campos a preencher) |
+| ~~9~~ | ~~12/06 16h00~~ | ~~confissao-piloto-travado~~ | ~~Confissão~~ | — | ❌ CORTADO 05/06 → ver substituição A |
+| ~~10~~ | ~~13/06 11h00~~ | ~~build-in-public-whatsapp~~ | ~~Build in public~~ | — | ❌ CORTADO 05/06 → ver substituição B |
+
+## SUBSTITUIÇÕES (Apolo cortou 9 e 10 — não dependiam de biografia/teste; repostos por 2 analíticos)
+
+| Slot | Pasta nova | Formato | Status |
+|---|---|---|---|
+| SEX 12/06 16h00 | 2026-06-12_omnichat-varejo-conversao | Data-story / Mito vs Verdade | ✅ pronto (URL OmniChat a confirmar) |
+| SÁB 13/06 11h00 | 2026-06-13_bomba-aplicar-vence-modelo | Bomba / hot-take | ✅ pronto (slot-válvula) |
+
+- **POST A (OmniChat):** "IA no varejo BR converte IGUAL ao humano (9%) por 1/4 do custo." Enquadrado como ESTUDO OmniChat (vendor, autorreportado), não fato duro. Ressalva do Radar aplicada: 71% conversas vs 18% atendentes é acumulado 2023-2025 (3 anos), não "em 2025". Ação: começar pela recuperação de carrinho (ROI relatado 176x), medir baseline antes. URL do estudo A CONFIRMAR pelo Apolo.
+- **POST B (bomba):** hot-take "aplicar vence modelo". Standalone, OPINIÃO (sem dado de terceiro). NÃO toca em Meta/WhatsApp (já tem 2 na semana), layoff (é a bomba de terça) nem no número do OmniChat. Continua sendo o slot-válvula (1º a cair pelo freio LEADING).
+- Os post.md cortados (9 e 10) ganharam banner ❌ NÃO PUBLICAR no topo; conteúdo preservado.
+
+**Verificação das substituições:** determinística OK (A: corpo 1.644 / B: corpo 439; zero hífen; CAPS A=5 B=3; #PMEoperando por último; sem #Os4Ds; anti-slop limpo). Adversarial: A=4.9, B=4.6, ambos pass. Fix aplicado pós-review: 1º comentário do POST B reescrito pra não ecoar a CTA do corpo (agrega ângulo em vez de repetir).
 
 ## REGRAS APLICADAS (calibragem v2)
 - Hook ≤140 chars com número (parti dos hooks da grade, refinei).
