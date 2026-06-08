@@ -1,4 +1,6 @@
-# RAIO-X DA SEMANA Nº1 — Debrief de sexta (NEWSLETTER)
+# BÚSSOLA DA IA Nº1 — Debrief de sexta (NEWSLETTER)
+
+> **Nome da newsletter (definido 08/06):** Bússola da IA — semanal, toda sexta. Substitui o nome de trabalho "Raio-X da Semana" pra não misturar metáfora (bússola vs raio-X).
 
 - **Veículo:** Newsletter do LinkedIn (não é post de feed, dispara push pra base)
 - **Formato:** Debrief de sexta (ritual fixo)
@@ -14,7 +16,7 @@
 ## TÍTULO DA EDIÇÃO (newsletter)
 
 ```
-Raio-X da Semana nº1: 3 movimentos de IA que mexem com a sua PME (e 1 que é só hype)
+Bússola da IA nº1: 3 movimentos de IA que mexem com a sua PME (e 1 que é só hype)
 ```
 
 ---
@@ -68,9 +70,9 @@ A IA não premia quem tem o modelo mais caro. Premia quem liga primeiro, no proc
 
 Qual dos 3 você testaria PRIMEIRO?
 
-Salva esse Raio-X. Toda sexta sai um, vira teu radar sem garimpar.
+Salva essa Bússola. Toda sexta sai uma, vira teu norte sem garimpar.
 
-#PMEoperando #IAaplicada #RaioXDaSemana
+#PMEoperando #IAaplicada #BussolaDaIA
 ```
 
 ---
@@ -78,7 +80,7 @@ Salva esse Raio-X. Toda sexta sai um, vira teu radar sem garimpar.
 ## 1º COMENTÁRIO (copiar limpo)
 
 ```
-Fontes do Raio-X nº1, na ordem dos movimentos:
+Fontes da Bússola da IA nº1, na ordem dos movimentos:
 
 1. Meta Business Agent no WhatsApp (lançamento global, cobrança PME e piloto do México +10%):
 https://exame.com/tecnologia/meta-amplia-business-agent-no-whatsapp-inclui-instagram-e-prepara-cobranca-para-pmes/

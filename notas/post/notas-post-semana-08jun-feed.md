@@ -64,3 +64,11 @@
 
 Todos ≥4.5 → auto-passam (Apolo só precisa olhar os pontos pendentes abaixo, não a qualidade).
 Único refino aplicado pós-review: nota no 1º comentário do item 3 sobre o slug "125 mi" da URL vs R$ 130 mi vigente (evita confusão de quem clica).
+
+## CONVERSÃO CARROSSÉIS → TEXTO PURO (08/06 — Apolo cortou os 2 carrosséis, davam trabalho de gerar imagem)
+Itens 1 (Meta Business Agent, SEG 08/06 10h30) e 4 (Estado da IA na PME BR, QUA 10/06 10h30) viraram POST DE TEXTO PURO standalone. Conteúdo dos 7 slides DOBRADO no corpo, zero perda. `carrossel.md` das 2 pastas APAGADO.
+
+- **Item 1 — meta-business-agent-whatsapp:** corpo 1.541 chars. 3 passos no corpo (ATIVE / ALIMENTE antes / DEFINA handoff) + janela grátis fechando. Verbatim travado mantido: "em minutos", "1 milhão de empresas, 24/7", cobrança PME "meados de junho/2026" (1ª desde 2018), piloto MX "+10% nos negócios" (que só estava no slide, agora entrou no corpo). Inimigo Pilotante explícito. CAPS=5 (ATIVE/ALIMENTE/DEFINA/MEDIR/MILHÃO).
+- **Item 4 — estado-ia-pme-br:** corpo 1.548 chars. Data-story no corpo (44% usam IA / 41% chatbot WhatsApp / só 9% medem ROI), enquadrado como PESQUISA autorreportada. Money line isolada: "Adotar IA não é mais o diferencial. MEDIR é." Inimigo Pilotante explícito. CAPS=5 (ANTES/LIGARAM/MEDIR/MEDIÇÃO/UMA).
+- **Ambos:** zero ref a carrossel/slide/arraste; fontes nomeadas (Exame/TechCrunch; Sebrae/Nautis) TIRADAS do corpo → só no 1º comentário; CTA = save + pergunta de engajamento sem "marca/manda"; 3 hashtags PascalCase com #PMEoperando por último.
+- **NÃO mexi em thumbs** (terminal Thumbnail).
